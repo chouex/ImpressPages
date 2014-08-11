@@ -1,0 +1,35 @@
+<div class="ip">
+    <div id="ipWidgetImageLink" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"><?php _e('ImageLink', 'ImageLink'); ?></h4>
+                </div>
+                <div class="modal-body">
+                    <?php echo $form1->render(); ?>
+                </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><?php _e('Cancel', 'AsdMenuWidget'); ?></button>
+                    <button type="button" class="btn btn-primary ipsConfirm"><?php _e('Confirm', 'AsdMenuWidget'); ?></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $this = $('#ipWidgetImageLink');
+    $this.find('fieldset').each(function (index, fieldset) {
+        var $fieldset = $(fieldset);
+        var $legend = $fieldset.find('legend');
+        if ($legend.length) {
+            $legend
+                .attr('data-toggle', 'collapse')
+                .attr('data-target', '#propertiesCollapse'+index)
+                .addClass('collapsed');
+            $fieldset.find('.form-group').wrapAll('<div class="collapse" id="propertiesCollapse'+index+'" />');
+        }
+    });
+    ipInitForms();
+</script>

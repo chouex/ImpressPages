@@ -1,0 +1,27 @@
+{
+    "title": "User",
+    "version": "1.01",
+    "name": "User",
+    "description": "Official user plugin. Registration, login, profile.",
+    "author": "ImpressPages",
+    "options": [
+        {
+            "label": "Url after login",
+            "name": "urlAfterLogin",
+            "type": "text",
+            "default": ""
+        },
+        {
+            "label": "Url after registration",
+            "name": "urlAfterRegistration",
+            "type": "text",
+            "default": ""
+        },
+        {
+            "label": "Url after logout",
+            "name": "urlAfterLogout",
+            "type": "text",
+            "default": ""
+        }
+    ]
+}

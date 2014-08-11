@@ -1,0 +1,14 @@
+/.project
+/.buildpath
+/.settings
+/.idea
+/project
+/file
+!/file/.htaccess
+!/file/readme.txt
+/robots.txt
+/.idea
+
+/phpunit/Tmp
+/config.php
+

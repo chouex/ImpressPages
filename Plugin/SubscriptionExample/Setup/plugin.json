@@ -1,0 +1,7 @@
+{
+    "title": "Subscription example",
+    "version": "1.00",
+    "name": "SubscriptionExample",
+    "description": "Example plugin illustrating how to use subscription mechanism",
+    "author": "ImpressPages"
+}

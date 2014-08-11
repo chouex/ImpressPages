@@ -1,0 +1,142 @@
+{
+    "title": "Bootstrap Free",
+    "version": "1.00",
+    "doctype": "HTML5", /* HTML5, XHTML1_STRICT, XHTML1_TRANSITIONAL, XHTML1_FRAMESET, HTML4_STRICT, HTML4_TRANSITIONAL, HTML4_FRAMESET  */
+    "thumbnail": "thumbnail.png",
+    "author": "Jacobo Lopez (WannaCo)",
+    "widget": { /* Image cropping settings for widgets. Require theme reinstall to take affect. */
+        "image": {
+            "width": 1180,
+            "height": 400
+        },
+        "gallery": {
+            "width": 295,
+            "height": 164
+        }
+    },
+    
+    
+    "options": [
+     {
+       "label": "Navbar Inverse",
+       "type": "group",
+       "options": [
+         {
+            "label": "Navbar Background Color",
+            "name": "navbar-inverse-bg",
+            "type": "color",
+            "default": "#222"
+         },
+        
+         {
+            "label": "Nav Active link",
+            "name": "navbar-inverse-link-hover-color",
+            "type": "color",
+            "default": "#fff"
+         },
+        
+         {
+            "label": "Nav Active link BG",
+            "name": "navbar-default-link-active-bg",
+            "type": "color",
+            "default": "#080808"
+         }
+         
+       
+          ]
+     },
+     {
+      "label": "Dropdown Navabr",
+       "type": "group",
+       "options": [
+         {
+            "label": "active Menu item",
+            "name": "brand-primary",
+            "type": "color",
+            "default": "#428bca"
+         },
+        
+         {
+            "label": "Toogle button hover",
+            "name": "navbar-inverse-toggle-hover-bg",
+            "type": "color",
+            "default": "#333"
+         }
+       
+          ]
+     },
+     {
+        "label": "General",
+        "type": "group",
+        "options": [  
+          
+        {
+            "label": "Text color",
+            "name": "textColor",
+            "type": "color",
+            "default": "#000"
+        },
+        {
+            "label": "Language",
+            "name": "ipLinkColor",
+            "type": "color",
+            "default": "#019bd4"
+        },
+        
+        
+        {
+            "label": "Form Button BG",
+            "name": "ipFormButtonBackground",
+            "type": "color",
+            "default": "#019bd4"
+        },
+
+        {
+            "label": "Body background color",
+            "name": "bodyBackgroundColor",
+            "type": "color",
+            "default": "#fff"
+        },
+       
+        
+         {
+            "label": "Left menu Active color",
+            "name": "component-active-color",
+            "type": "color",
+            "default": "#fff"
+        },
+        {
+            "label": "Left menu Active BG",
+            "name": "active-items-bg",
+            "type": "color",
+            "default": "#428bca"
+        },
+        {
+            "label": "Footer BG color",
+            "name": "bgfooter",
+            "type": "color",
+            "default": "#f5f5f5"
+        },
+        {
+            "label": "Breadcrumb BG",
+            "name": "breadcrumb-bg",
+            "type": "color",
+            "default": "#f5f5f5"
+        },
+       
+       
+        {
+            "label": "Lightbox style",
+            "name": "lightboxStyle",
+            "type": "select",
+            "default": "2",
+            "values": [1, 2, 3, 4, 5]
+        }
+        
+       
+       ]
+     }
+        
+    ]
+
+}

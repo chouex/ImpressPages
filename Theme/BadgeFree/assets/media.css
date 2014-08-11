@@ -1,0 +1,202 @@
+
+
+/* ----- Media queries ----- */
+@media (max-width: 1024px) {
+.slide{ max-width:90%}
+}
+
+@media (min-width: 980px) and (max-width: 1200px) {
+body{margin-left:20px;margin-right:20px;} 
+    .flex-caption {
+        max-width: 700px;
+    }
+	
+	.what-we-do .service p, .portfolio .work p {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .call-to-action-text {
+        padding-bottom: 30px;
+    }
+
+    .call-to-action-text .ca-text {
+        padding: 0 35px;
+    }
+
+    .call-to-action-text .ca-button {
+        margin-top: 10px;
+    }
+.page-title {padding:10px;margin-top:10px;}
+.page-left {width: 70%;float:right;}
+.aside-left {width: 25%;float:left;}
+
+.page-right {width: 70%;float:left;}
+.aside-right {width: 25%;float:right;}	
+	
+}
+
+@media (min-width: 980px) and (max-width: 1024px) {
+.span3{width:45%}
+}
+@media (min-width: 768px) and (max-width: 979px) {
+.span3{width:45%}
+    .header ul.nav li a {
+        padding: 15px 20px 15px 20px;
+        font-weight: normal;
+        text-align: left;
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
+        border-radius: 0;
+    }
+
+    .header ul.nav li.current-page a {
+        padding-top: 15px;
+    }
+
+    .header ul.nav li a i, .header ul.nav li a br {
+        display: none;
+    }
+
+    .flex-caption {
+        max-width: 500px;
+    }
+
+    .what-we-do .service p, .portfolio .work p {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .call-to-action-text {
+        padding-bottom: 30px;
+    }
+
+    .call-to-action-text .ca-text {
+        padding: 0 35px;
+    }
+
+    .call-to-action-text .ca-button {
+        margin-top: 10px;
+    }	
+	
+}
+
+@media (max-width: 768px) {
+
+    body {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .slider, .what-we-do, .portfolio {
+        padding: 0 20px;
+    }
+
+    .what-we-do {
+        margin-top: 30px;
+    }
+
+    .header ul.nav li a {
+        padding: 15px 20px 15px 20px;
+        font-weight: normal;
+        text-align: left;
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
+        border-radius: 0;
+    }
+
+    .header ul.nav li.current-page a {
+        padding-top: 15px;
+    }
+
+    .header ul.nav li a i, .header ul.nav li a br {
+        display: none;
+    }
+
+    .flex-caption {
+        display: none;
+    }
+
+    .presentation, footer, .testimonials {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .presentation p {
+        line-height: 30px;
+    }
+
+    .what-we-do .service p, .portfolio .work p {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .what-we-do .service .icon-awesome {
+        padding-top: 10px;
+    }
+
+    .page-title p {
+        display: block;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+
+    .call-to-action-text {
+        padding-bottom: 30px;
+    }
+
+    .call-to-action-text .ca-text {
+        padding: 0 35px;
+    }
+
+    .call-to-action-text .ca-button {
+        margin-top: 10px;
+    }
+
+    .portfolio-page {
+        padding-bottom: 50px;
+    }
+
+    .tweet_list {
+        height: 6em;
+    }
+	.who-title h3, .portfolio-title h3, .testimonials-title h3 { 
+	width: 70%;
+    font-size: 22px;
+	}
+	.aside-left , .aside-right {width: 100%;float:none;}
+	.container,.page-left , .page-right{width: 100%;float:none;}
+	.aside-left .box, .aside-right .box {width: 100%;clear:both;padding:0;margin: 0;}	
+	.page-title {padding:10px;margin-top:10px;}
+}
+
+@media (min-width: 240px) and (max-width: 480px) {
+    .tweet_list {
+        height: 10em;
+    }
+	.ipModuleSearch .ipmControlInput {
+    width: 90%;}
+	.who-title h3, .portfolio-title h3, .testimonials-title h3 { 
+	width: 220px;
+    font-size: 20px;
+	}
+	.presentation h2 {font-size: 24px;}
+	.presentation p { font-size: 14px; line-height:16px;}
+	
+	.aside-left, .aside-right {width: 100%;float:none;}
+	.container,.page-left, .page-right {width: 100%;float:none;}
+	.aside-left .box, .aside-right .box {width: 100%;clear:both;padding:0;margin: 0;}
+	.page-title {padding:10px;margin-top:10px;}
+	
+}
+@media (min-width: 180px) and (max-width: 240px) {
+	.who-title h3, .portfolio-title h3, .testimonials-title h3 { 
+	width: 100%;
+    font-size: 14px;
+	}
+	.aside-left, .aside-right {width: 100%;float:none;}
+	.container,.page-left, .page-right {width: 100%;float:none;}
+	.aside-left .box, .aside-right .box {width: 100%;clear:both;padding:0;margin: 0;}
+	.page-title {padding:5px;margin-top:10px;}
+	
+}

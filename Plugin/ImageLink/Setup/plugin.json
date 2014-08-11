@@ -1,0 +1,16 @@
+{
+    "title": "Image Link Widget",
+    "version": "1.00",
+    "name": "ImageLink",
+    "description": "add link into Image",
+    "author": "Albert",
+    "options": [
+        {
+            "label": "Enable multilanguage choice",
+            "name": "multilanguage",
+            "type": "select",
+            "default": "No",
+            "values": ["No", "Yes"]
+        }
+    ]
+}

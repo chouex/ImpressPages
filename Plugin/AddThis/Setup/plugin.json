@@ -1,0 +1,41 @@
+{
+    "title": "AddThis",
+    "version": "1.00",
+    "name": "AddThis",
+    "description": "Social sharing buttons.",
+    "author": "ImpressPages",
+    "options": [
+        {
+            "label": "Slot layout",
+            "name": "slotlayout",
+            "type": "select",
+            "default": "horizontal",
+            "values": ["horizontal", "vertical", "compact"]
+        },
+        {
+            "label": "Widget layout",
+            "name": "widgetlayout",
+            "type": "select",
+            "default": "horizontal",
+            "values": ["horizontal", "vertical", "compact"]
+        },
+        {
+            "label": "Number of icons",
+            "name": "numberOfIcons",
+            "type": "text",
+            "default": "5"
+        },
+        {
+            "label": "Enable counter",
+            "name": "enableCounter",
+            "type": "checkbox",
+            "default": false
+        },
+        {
+            "label": "Pro: AddThis user ID (E.g. 'ra-123654789456'). Leave blank for free version.",
+            "name": "addThisUid",
+            "type": "text",
+            "default": ""
+        }
+    ]
+}
