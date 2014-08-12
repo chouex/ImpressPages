@@ -46,7 +46,7 @@ $( document ).ready(function() {
 
     //chopping cart
     $( ".shopping" ).on( "click", function() {
-        //console.log($(this).parents('._title'));
+        console.log($(this).parents('._title'));
         cart.add({
             id:$( this ).attr('id'),                        // Specify the unique id for this item
             name:$(this).parents('.ipWidget').find('._title').text(),                  // Item name appear on the cart
