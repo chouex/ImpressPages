@@ -18,6 +18,12 @@
             "hint": "yourmail"
         },
         {
+            "label": "Theme Color",
+            "name": "theme_color",
+            "type": "color",
+            "default": "#00abff"
+        },
+        {
             "label": "Thanks Page",
             "name": "thanks_page",
             "type": "text",

@@ -7,26 +7,31 @@ class Event
     public static function ipBeforeController()
     {
     $script = "
-   $(document).ready(function() {
-   
+   $(document).ready(function(){
+    initBxslider();
+   window.setInterval('initBxslider()', 1000);
+   // $('.SliderGall').bind('DOMSubtreeModified', function() {
+    //		console.log(1)
+              //initBxslider();
+      //  });
+    });
+	function initBxslider() {
+	//if($('.SliderGall').find( '.bx-wrapper').length>0)return;
    $('.SliderGall').css('display','block');
    
-   $('.bxslider').bxSlider({
+   $('.bxslider-nc,.bxslider').each(function( index ) {
+    		if($(this).parent('.bx-viewport').length>0)return;
+    		console.log($(this))
+$( this ).bxSlider({
    auto: true,
    mode: 'fade',
    speed: 800,
    captions: true,
  
    });
+});
 
-   $('.bxslider-nc').bxSlider({
-   auto: true,
-   mode: 'fade',
-   speed: 800,
- 
-   });
-  });
-
+  }
 ";
 
         ipAddJsContent('imageslider', $script);

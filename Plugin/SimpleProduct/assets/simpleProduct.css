@@ -1,6 +1,5 @@
 .ipWidget-SimpleProduct ._images {
-    width: 50%;
-    float: left;
+    
 }
 
 .ipWidget-SimpleProduct ._image img{
@@ -10,9 +9,7 @@
 
 
 .ipWidget-SimpleProduct ._info {
-    width: 48%;
-    float: right;
-    padding-left: 2%;
+    margin:10px
 }
 
 .ipWidget-SimpleProduct ._thumb img {
@@ -25,7 +22,11 @@
     font-weight: bold;
 }
 
-.ipWidget-SimpleProduct ._description {
+.ipWidget-SimpleProduct ._description p {
     overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 
+img{
+	border:0;
+}

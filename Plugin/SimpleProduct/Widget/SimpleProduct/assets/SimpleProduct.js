@@ -22,7 +22,7 @@ var IpWidget_SimpleProduct = function () {
 
         this.$widgetOverlay = $('<div></div>');
         this.widgetObject.prepend(this.$widgetOverlay);
-        this.widgetObject.on('click', $.proxy(openPopup, this));	//fix product on onclick in some theme
+        this.$widgetOverlay.on('click', $.proxy(openPopup, this));
 
         $(document).on('ipWidgetResized', function () {
             $.proxy(fixOverlay, context)();
