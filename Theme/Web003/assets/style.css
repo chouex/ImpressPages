@@ -1,0 +1,446 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	margin:0;
+}
+.wrapper {
+	width: 100%;
+	height: 100%;
+}
+
+.bluel {
+	height: 50px;
+	background-color: #2aa2d4;
+}
+
+.head {
+	position: relative;
+	margin: 0 auto;
+	width: 960px;
+}
+
+.logo {
+	font-family: "Times New Roman", Times, serif;
+	margin:30px 0;
+}
+
+.gl {
+	width: 1px;
+	height: 33px;
+	position: absolute;
+	left: 120px;
+	top: 55px;
+}
+
+.lltt {
+	font-family: Arial, Helvetica, sans-serif, "微軟正黑體";
+	font-size: 12px;
+	font-family:;
+	position: absolute;
+	width: 500px;
+	height: 33px;
+	left: 140px;
+	top: 58px;
+	color: #999;
+}
+
+.menu00 {
+	height: 50px;
+	background-color: #2a2a2a;
+}
+
+.menu {
+	width: 960px;
+	margin: 0 auto;
+	height: 47px;
+	line-height: 47px;
+}
+
+.menu ul {
+	display: block;
+	width: 960px;
+	height: 47px;
+	margin: 0 auto;
+}
+
+.menu li {
+	float: left;
+	list-style: none;
+}
+
+.menu li a {
+	font-size: 16px;
+	display: block;
+	line-height: 47px;
+	text-decoration: none;
+	color: #999;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-family: Arial, Helvetica, sans-serif, "微軟正黑體";
+	text-align: center;
+	margin-right: 20px;
+}
+
+.menu li a:hover {
+	color: #fff;
+	border-bottom: 3px solid #2aa2d4;
+}
+/*banner*/
+.flexslider {
+	width: 960px;
+	height: 350px;
+	margin: 0;
+	padding: 0;
+}
+
+.flexslider .slides li {
+	display: none;
+}
+
+.flexslider .slides img {
+	max-width: 100%;
+	display: block;
+}
+
+.flexslider {
+	background: #fff;
+	position: relative;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.flexslider .slides  li {
+	position: relative;
+}
+
+.flexslider-container {
+	position: relative;
+}
+
+.flex-caption {
+	width: 500px;
+	word-wrap: break-word;
+	padding: 20px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, .3);
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.flex-direction-nav li a {
+	width: 52px;
+	height: 52px;
+	margin: -13px 0 0;
+	display: block;
+	background: url(../theme/bg_direction_nav.png) no-repeat 0 0;
+	position: absolute;
+	top: 50%;
+	cursor: pointer;
+	text-indent: -9999px;
+}
+
+.flex-direction-nav li a.next {
+	background-position: -52px 0;
+	right: 10px;
+}
+
+.flex-direction-nav li a.prev {
+	background-position: 0 0;
+	left: 10px;
+}
+
+.flex-control-nav {
+	position: absolute;
+	bottom: 10px;
+	left: 20px;
+}
+
+.flex-control-nav li {
+	margin: 0 0 0 5px;
+	float: left;
+}
+
+.flex-control-nav li:first-child {
+	margin: 0;
+}
+
+.flex-control-nav li a {
+	width: 13px;
+	height: 13px;
+	display: block;
+	background: url(../theme/bg_control_nav.png) no-repeat 0 0;
+	cursor: pointer;
+	text-indent: -9999px;
+}
+
+.flex-control-nav li a:hover {
+	background-position: 0 -13px;
+}
+
+.flex-control-nav li a.active {
+	background-position: 0 -26px;
+	cursor: default;
+}
+
+.btitle {
+	font-family: Arial, Helvetica, sans-serif, "微軟正黑體";
+	font-size: 20px;
+	color: #fff;
+	margin-bottom: 10px;
+}
+/*--*/
+article, aside, details, figcaption, figure, footer, header, hgroup,
+	menu, nav, section {
+	display: block;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+#container {
+	width: 960px;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+/**/
+.news00 {
+	padding-top: 39px;
+	width: 960px;
+	margin: 0 auto;
+	padding-bottom: 48px;
+}
+
+.newst {
+	font-family: Georgia, "Times New Roman", Times, serif, "微軟正黑體";
+	font-size: 16px;
+	color: #333;
+	margin-bottom: 15px;
+}
+
+.gll {
+	border-bottom: 1px solid #e6e6e6;
+	margin-bottom: 20px;
+}
+
+.new01 {
+	width: 225px;
+	height: 258px;
+	float: left;
+	margin-right: 20px;
+}
+
+.new01 img {
+	max-width: 225px;
+	max-height: 125px;
+	width: 225px;
+	height: 125px;
+}
+
+.new01 .tit {
+	margin-top: 20px;
+	font-family: Georgia, "Times New Roman", Times, serif, "微軟正黑體";
+	font-size: 16px;
+	line-height: 20px;
+	color: #333;
+}
+
+.new01 .date {
+	font-family: Georgia, "Times New Roman", Times, serif, "微軟正黑體";
+	font-size: 12px;
+	color: #979797;
+	line-height: 16px;
+}
+
+.new01 .ttin00 {
+	font-family: Georgia, "Times New Roman", Times, serif, "微軟正黑體";
+	font-size: 13px;
+	color: #666;
+	line-height: 18px;
+}
+
+.new01 .more {
+	margin-top: 5px;
+	font-family: Georgia, "Times New Roman", Times, serif, "微軟正黑體";
+	font-size: 13px;
+	color: #2aa2d4;
+	line-height: 18px;
+}
+
+.new01 .more a {
+	text-decoration: none;
+	font-family: Georgia, "Times New Roman", Times, serif, "微軟正黑體";
+	font-size: 13px;
+	color: #2aa2d4;
+	line-height: 18px;
+}
+
+.new01 .more a:hover {
+	color: #ccc;
+}
+
+.clear {
+	clear: both;
+}
+
+.aboutb {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.tttitle {
+	font-size: 36px;
+	font-family: Georgia, "Times New Roman", Times, serif, "微軟正黑體";
+	width: 225px;
+	margin-right: 20px;
+	word-break: break-all;
+	color: #333;
+}
+
+.tttit {
+	font-size: 16px;
+	font-family: Georgia, "Times New Roman", Times, serif, "微軟正黑體";
+	word-break: break-all;
+	color: #333;
+	margin-bottom: 37px;
+}
+
+.ttini {
+	font-size: 12px;
+	font-family: Georgia, "Times New Roman", Times, serif, "微軟正黑體";
+	word-break: break-all;
+	color: #666;
+	margin-bottom: 37px;
+	line-height: 18px;
+}
+
+.footer {
+	background-color: #1c1c1c;
+	height: 273px;
+	margin-top:30px;
+}
+
+.footer00 {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.ggl {
+	background-color: #c2c2c2;
+	height: 5px;
+}
+
+.top {
+	padding-top: 10px;
+	width: 82px;
+	height: 41px;
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+
+.bl {
+	border-bottom: 1px solid #3d3d3d;
+	margin-bottom: 38px;
+}
+
+.cdetail {
+	float: left;
+	font-size: 12px;
+	line-height: 14px;
+	color: #aaa;
+}
+
+.cdetail .tti00 {
+	font-family: Georgia, "Times New Roman", Times, serif, "微軟正黑體";
+	color: #fff;
+	font-size: 12px;
+	margin-bottom: 23px;
+}
+/**
+ * CSS image crop. Forces image to 4:3 aspect ratio cropping at the middle.
+ * http://dabblet.com/gist/4711695
+ */
+.img-crop,
+.img-crop img{
+	width: 100%; /* gotta be responsive these days */
+}
+.img-crop{
+	background-color: #ededed; /* some background color for short images */
+	overflow: hidden;
+	
+	/* remove white-space for inline-block elements */
+	letter-spacing: -0.31em; /* webkit */
+	*letter-spacing: normal; /* reset IE < 8 */
+	word-spacing: -0.43em; /* IE < 8 && gecko */
+}
+.img-crop:before,
+.img-crop img{
+	/* vertically center the image */
+	display: inline-block;
+	vertical-align: middle;
+}
+.img-crop:before{
+	/* pseudo element to vertically align image to */
+	content: "";
+	
+	/* Magic Number */
+	/* Set this to your desired height(to width) ratio */
+	padding-top: 75%; /* % of original image width */ 
+}
+.img-crop img{
+	/* removes(sorta) image from the flow */
+	padding-left: 100%;
+	margin: -999em -100%;
+}
+.copyright {
+	font-family: Georgia, "Times New Roman", Times, serif, "微軟正黑體";
+	font-size: 12px;
+	line-height: 14px;
+	text-align: right;
+	color: #aaa;
+	float: right;
+}
+
+.col-4 {
+	width: 25%;
+	display: inline;
+	float: left;
+}
+
+.right-top {
+	width: 25%;
+	display: inline;
+	top: 50%;
+	float: right;
+	right: 0;
+	position: absolute;
+}
+
+.row {
+	clear:both;
+}
