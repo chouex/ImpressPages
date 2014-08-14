@@ -16,11 +16,8 @@ namespace Plugin\SimpleProduct;
 class Event
 {
     public static function ipBeforeController()
-    {    $script = "
-   var cartColor='".ipGetOption("SimpleProduct.theme_color",'#00abff')."';
-";
-
-        ipAddJsContent('simpleproduct', $script);
+    {    
+    	ipAddJsVariable('cartColor',ipGetOption("SimpleProduct.theme_color",'#00abff'));
         ipAddCss('assets/simpleProduct.css');
         ipAddCss('assets/dc.core.1.1.0.min.css');
         ipAddCss('assets/dc.cart.css');

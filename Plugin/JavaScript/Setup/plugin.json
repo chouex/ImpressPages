@@ -1,0 +1,15 @@
+{
+    "title": "JavaScript",
+    "version": "0.10",
+    "name": "JavaScript",
+    "description": "Add JavaScript.",
+    "author": "Charles",
+    "options": [
+        {
+            "label": "JavaScript",
+            "name": "javascript",
+            "type": "textarea",
+            "default": ""
+        }
+    ]
+}
