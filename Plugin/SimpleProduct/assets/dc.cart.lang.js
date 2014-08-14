@@ -21,6 +21,7 @@ DC.cart.lang_en ={
     button_cart     :'Review Cart',
     button_shipping :'Edit Shipping',
     button_cancel   :'Cancel',
+    button_finish   :'Finish',
     
     label_total     :'Total',
     label_item_info  :'You have %S item(s) in your cart.',

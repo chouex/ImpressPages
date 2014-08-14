@@ -2519,7 +2519,7 @@ fieldset[disabled] .ipModuleForm .checkbox-inline {
   font-weight: bold;
 }
 .topmenu .crumb > a {
-  color: #000000;
+  /*color: @ipTextColor;*/
   font-weight: bold;
 }
 .topmenu .parent > a {

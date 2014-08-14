@@ -21,7 +21,6 @@ class SiteController
     public function checkout()
     {
 
-        //var_dump(ipRequest()->getPost());
         $orderData['name'] = ipRequest()->getPost('first_name').' '.ipRequest()->getPost('last_name');
         $orderData['address'] = ipRequest()->getPost('address1');
         $orderData['email'] = ipRequest()->getPost('address2');
@@ -37,16 +36,26 @@ class SiteController
                 'quantity'=>ipRequest()->getPost("quantity_$i"),
                 );
         }
-        //var_dump($orderData);
-        $orderId = OrderModel::create($orderData);
 
         $viewData['message']=ipGetOption('SimpleProduct.thanks_page');;
-        if($owner_mail=ipGetOption('SimpleProduct.owner_mail'))
-            @mail ( $owner_mail , 'new order' , json_encode($orderData) );
+        if(0&&$owner_mail=ipGetOption('SimpleProduct.owner_mail')){
+        	ipSendEmail(
+        	"info@example.com",
+        	"My Website",
+        	"chouex@gmail.com",
+        	"John Smith",
+        	"Test e-mail",
+        	"<div>This is non-urgent e-mail message.</div>"
+        	);
+        	//- See more at: http://www.impresspages.org/docs/email#sthash.aDQ3CNH1.dpuf
+        }
+            //@mail ( $owner_mail , 'new order' , json_encode($orderData) );
 
+        return new \Ip\Response\Json( $viewData);
         $pageView = ipView('view/page/thanks.php', $viewData);
 
         die($pageView);
+        //- See more at: http://www.impresspages.org/docs/response#sthash.4mRiliYw.dpuf
 /*
         $form = FormHelper::physicalProductOrderForm($widgetId);
         $orderData = $form->filterValues(ipRequest()->getPost());

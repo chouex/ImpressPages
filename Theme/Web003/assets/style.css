@@ -444,3 +444,7 @@ em {
 .row {
 	clear:both;
 }
+
+.side {
+	margin-top:30px;
+}
