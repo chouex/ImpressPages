@@ -433,9 +433,8 @@ em {
 }
 
 .right-top {
-	width: 25%;
 	display: inline;
-	top: 50%;
+	bottom: 0;
 	float: right;
 	right: 0;
 	position: absolute;
@@ -447,4 +446,7 @@ em {
 
 .side {
 	margin-top:30px;
+}
+.ipsSearch {
+	border:none;
 }

@@ -36,6 +36,7 @@ class SiteController
                 'quantity'=>ipRequest()->getPost("quantity_$i"),
                 );
         }
+        $orderId = OrderModel::create($orderData);
 
         $viewData['message']=ipGetOption('SimpleProduct.thanks_page');;
         if(0&&$owner_mail=ipGetOption('SimpleProduct.owner_mail')){
@@ -52,9 +53,7 @@ class SiteController
             //@mail ( $owner_mail , 'new order' , json_encode($orderData) );
 
         return new \Ip\Response\Json( $viewData);
-        $pageView = ipView('view/page/thanks.php', $viewData);
 
-        die($pageView);
         //- See more at: http://www.impresspages.org/docs/response#sthash.4mRiliYw.dpuf
 /*
         $form = FormHelper::physicalProductOrderForm($widgetId);
