@@ -54,7 +54,7 @@ class FormHelper
                 array(
                     'name' => 'currency',
                     'label' => __( 'Currency (eg. MOP)', 'SimpleProduct', false ),
-                    'value' => empty($widgetData['currency']) ? null : $widgetData['currency']
+                    'value' => empty($widgetData['currency']) ? 'MOP' : $widgetData['currency']
                 )
             )
         );
