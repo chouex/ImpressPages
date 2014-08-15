@@ -35,10 +35,10 @@ $( document ).ready(function() {
         autoOpenWhenAdd:true,  // Enable auto open the cart window after a item added to cart (Optional)
         autoCleanCart:true, // Enable auto clean cart after checkout button click (Optional)
         openNewCheckOutWindow:false, // Indicate if the paypal checkout window is open in a new window (Optional)
-        themeColor:cartColor,       // Color in the theme (Optional)
+        /*themeColor:cartColor,       // Color in the theme (Optional)
         themeDarkColor:cartColor,   // Dark color in the theme (Optional)
+        //footer:'Footer Text Here',  // The content of footer (Optional)
         /*header:'Header Text Here',  // The content of header (Optional)
-        footer:'Footer Text Here',  // The content of footer (Optional)
         paypalOptions:{
             business:'YOU_PAYPAL_EMAIL@email.com'
         }*/
@@ -49,7 +49,7 @@ $( document ).ready(function() {
         var ipWidget=$(this).parents('.ipWidget');
         //console.log($(ipWidget[0]).find('._price span').text());
         cart.add({
-            id:$( this ).data('alias'),                        // Specify the unique id for this item
+            id:$( this ).data('widgetid'),                        // Specify the unique id for this item
             name:$(ipWidget[0]).find('._title').text(),                  // Item name appear on the cart
             thumbnail:$(ipWidget[0]).find('img').attr('src'),  // Thumbnail path of the item (Optional)
             price:$(ipWidget[0]).find('._price span').text(),                          // Cost of the item

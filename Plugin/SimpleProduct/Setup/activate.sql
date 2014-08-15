@@ -27,8 +27,9 @@ CREATE TABLE IF NOT EXISTS `ip_simple_product_order_item` (
   `order_id` int(11) NOT NULL,
   `item_name` text NOT NULL,
   `amount` int(11) NOT NULL,
-  `item_number` varchar(32) NOT NULL,
+  `item_number` varchar(32),
   `quantity` int(11) NOT NULL,
   `currency` varchar(255) NOT NULL DEFAULT 'MOP',
+  `widgetId` int(11) NOT NULL COMMENT 'ID of widget which started the process. This field is just in case here. All widgets data is stored in this table either way.',
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;

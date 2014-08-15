@@ -28,8 +28,16 @@ class AdminController
             'table' => 'simple_product_order',
             'fields' => array(            
                 array(
+                    'label' => 'order id',
+                    'field' => 'id'
+                ),          
+                array(
                     'label' => 'name',
                     'field' => 'name'
+                ),
+                array(
+                    'label' => 'email',
+                    'field' => 'email'
                 ),
                 array(
                     'label' => 'telephone',
@@ -50,19 +58,19 @@ class AdminController
                         'table' => 'simple_product_order_item',
                         'fields' => array(
                             array(
-                                'label' => 'item_name',
+                                'label' => '物品名',
                                 'field' => 'item_name'
                             ),
                             array(
-                                'label' => 'amount',
+                                'label' => '價格',
                                 'field' => 'amount'
                             ),
                             array(
-                                'label' => 'item_number',
-                                'field' => 'item_number'
+                                'label' => '物品ID',
+                                'field' => 'widgetid'
                             ),
                             array(
-                                'label' => 'quantity',
+                                'label' => '數量',
                                 'field' => 'quantity'
                             )
                         )

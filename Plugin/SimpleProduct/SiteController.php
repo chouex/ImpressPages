@@ -32,13 +32,14 @@ class SiteController
             $orderData['items'][]=array(
                 'item_name'=>ipRequest()->getPost("item_name_$i"),
                 'amount'=>ipRequest()->getPost("amount_$i"),
-                'item_number'=>ipRequest()->getPost("item_number_$i"),
+                'widgetid'=>ipRequest()->getPost("item_number_$i"),
                 'quantity'=>ipRequest()->getPost("quantity_$i"),
                 );
         }
         $orderId = OrderModel::create($orderData);
 
-        $viewData['message']=ipGetOption('SimpleProduct.thanks_page');;
+        $viewData['message']=ipGetOption('SimpleProduct.thanks_page');
+        $viewData['orderId']=$orderId;
         if(0&&$owner_mail=ipGetOption('SimpleProduct.owner_mail')){
         	ipSendEmail(
         	"info@example.com",

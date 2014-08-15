@@ -85,7 +85,7 @@ class FormHelper
                 )
             )
         );
-
+/*
         $values = array(
             array('physical', __('Physical', 'SimpleProduct', false)),
             array('downloadable', __('Downloadable', 'SimpleProduct', false)),
@@ -123,7 +123,7 @@ class FormHelper
         );
 
 
-
+*/
 
         return $form;
     }
