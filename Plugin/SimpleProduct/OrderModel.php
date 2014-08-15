@@ -50,10 +50,10 @@ class OrderModel
             $params['other'] = json_encode(self::utf8Encode($otherParams));
         }
 
-        if (empty($params['price'])) {
-           $params['price'] = 0;
-        }
-        $params['price'] = $params['price'] * 100;
+        //if (empty($params['price'])) {
+        //   $params['price'] = 0;
+        //}
+        //$params['price'] = $params['price'] * 100;
 
 
         $orderId = ipDb()->insert('simple_product_order', $params);
