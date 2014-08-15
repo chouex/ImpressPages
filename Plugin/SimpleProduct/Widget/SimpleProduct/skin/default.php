@@ -22,7 +22,7 @@
             <p class="_price"><?=$currency?> $<span><?php echo $price ?></span></p>
         <?php } ?>
 
-        <p><span data-widgetid="<?php echo (int) $widgetId ?>" id="shopping<?=(int)$widgetId ?>" class="_button button shopping"><?php _e('Add to Cart', 'SimpleProduct') ?></span></p>
+        <p><span data-alias="<?=($alias) ?>" data-widgetid="<?php echo (int) $widgetId ?>" id="shopping<?=(int)$widgetId ?>" class="_button button shopping"><?php _e('Add to Cart', 'SimpleProduct') ?></span></p>
         
     </div>
 </div>

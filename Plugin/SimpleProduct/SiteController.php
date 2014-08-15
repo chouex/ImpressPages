@@ -20,7 +20,7 @@ class SiteController
 {
     public function checkout()
     {
-
+//var_dump(ipRequest()->getPost());
         $orderData['name'] = ipRequest()->getPost('first_name').' '.ipRequest()->getPost('last_name');
         $orderData['address'] = ipRequest()->getPost('address1');
         $orderData['email'] = ipRequest()->getPost('address2');

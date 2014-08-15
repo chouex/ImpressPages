@@ -49,7 +49,7 @@ $( document ).ready(function() {
         var ipWidget=$(this).parents('.ipWidget');
         //console.log($(ipWidget[0]).find('._price span').text());
         cart.add({
-            id:$( this ).attr('id'),                        // Specify the unique id for this item
+            id:$( this ).data('alias'),                        // Specify the unique id for this item
             name:$(ipWidget[0]).find('._title').text(),                  // Item name appear on the cart
             thumbnail:$(ipWidget[0]).find('img').attr('src'),  // Thumbnail path of the item (Optional)
             price:$(ipWidget[0]).find('._price span').text(),                          // Cost of the item
