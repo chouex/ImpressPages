@@ -1,0 +1,58 @@
+/*Slider*/
+.slider-relative {
+	position:relative;
+	overflow:hidden;
+	margin: 0 auto;
+}
+
+
+.items {
+	display: none;	
+}
+
+.slider-block {
+	position:relative;
+	overflow:hidden;
+	height: 544px;
+	margin: 0 auto;	
+}
+.slider {
+	height: 544px;
+	position: absolute;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+	width: 1600px;
+}
+
+.pagination {
+position: absolute;
+left: 50%;
+margin-left: -220px;
+z-index: 999;
+top: 516px;
+}
+
+.pagination li {
+	float: left;
+}
+
+.pagination li+li {
+	margin-left: 15px;
+}
+
+
+.pagination  li a{
+	width: 28px;
+	display: block;
+		transition: 0s ease;
+	-o-transition: 0s ease;
+	-webkit-transition: 0s ease;
+	height: 28px;
+	background: url(../images/pagin2.png) right 0 no-repeat;
+}
+
+.pagination li a:hover, .pagination li.current a {
+	background-position: 0 0;
+}

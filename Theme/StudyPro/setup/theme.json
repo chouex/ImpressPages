@@ -1,0 +1,57 @@
+{
+    "title": "Study Pro",
+    "version": "1.00",
+    "doctype": "HTML5", /* HTML5, XHTML1_STRICT, XHTML1_TRANSITIONAL, XHTML1_FRAMESET, HTML4_STRICT, HTML4_TRANSITIONAL, HTML4_FRAMESET  */
+    "thumbnail": "thumbnail.png",
+    "author": "Violeta Dimitrova",
+    "widget": { /* Image cropping settings for widgets. Require theme reinstall to take affect. */
+        "image": {
+            "width": 1180,
+            "height": 400
+        },
+        "gallery": {
+            "width": 295,
+            "height": 164
+        }
+    },
+    "options": [
+        {
+            "label": "Text color",
+            "name": "textColor",
+            "type": "color",
+            "default": "#454545"
+        },
+        {
+            "label": "Link color and Title color",
+            "name": "linkColor",
+            "type": "color",
+            "default": "#c80011"
+        },
+        {
+            "label": "Navigation color",
+            "name": "navColor",
+            "type": "color",
+            "default": "#c80022"
+        },
+        {
+            "label": "Background color",
+            "name": "mainColor",
+            "type": "color",
+            "default": "#f2f0f0"
+        },
+        {
+            "label": "Top and Footer background color",
+            "name": "topColor",
+            "type": "color",
+            "default": "#32362e"
+        },
+        {
+            "label": "Header background color",
+            "name": "headerColor",
+            "type": "color",
+            "default": "#1c5e7c"
+        }
+
+    ]
+
+}

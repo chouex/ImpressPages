@@ -1,0 +1,134 @@
+.selectBox{
+	display: block !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 150px;
+	height: 33px;
+	z-index: -1;
+	margin-bottom: 6px;
+}
+
+.selectBox-dropdown{
+	min-width: 150px;
+	border: solid 1px #BBB;
+	line-height: 1.5;
+	text-decoration: none;
+	text-align: left;
+	color: #000;
+	outline: none;
+	vertical-align: middle;
+	cursor: default;
+	z-index: 2 !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-bottom: 6px;
+
+    background: #ffffff;
+    border: 1px solid #e3e3e3;
+    font-size: 15px;
+    color: #828282;
+    padding: 0px 13px 0px 8px;
+}
+
+.selectBox-dropdown:focus,
+.selectBox-dropdown:focus .selectBox-arrow{
+    border-color: #bbaed0;
+    outline: none;
+}
+
+.selectBox-dropdown.selectBox-menuShowing{}
+
+.selectBox-dropdown .selectBox-label{
+	padding: 3px 8px 2px 0px;
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+    font-size: 15px;
+    color: #828282;
+    margin-top: 3px;
+}
+
+.selectBox-dropdown .selectBox-arrow{
+	position: absolute;
+	top: 0;
+	right: 7px;
+	width: 23px;
+	height: 100%;
+	background: url(../img/selectbox_arrow.png) 50% center no-repeat;
+}
+
+.selectBox-dropdown-menu{
+	position: absolute;
+	z-index: 99999;
+	max-height: 200px;
+	min-height: 1em;
+	margin-top: -1px;
+	border-left: 1px solid #e3e3e3;
+	border-right: 1px solid #e3e3e3;
+	border-bottom: 1px solid #e3e3e3;
+}
+
+.selectBox-inline{
+	min-width: 150px;
+	outline: none;
+	border: solid 1px #BBB;
+	background: #FFF;
+	display: inline-block;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	overflow: auto;
+}
+
+.selectBox-inline:focus{
+	border-color: #666;
+}
+
+
+/* Options */
+.selectBox-options,
+.selectBox-options li,
+.selectBox-options li a{
+	list-style: none;
+	display: block;
+	cursor: default;
+	padding: 0;
+	margin: 0;
+}
+
+.selectBox-options{
+	li{
+
+		a{
+			font-size: 15px;
+			color: #828282;
+			line-height: 1.5;
+			padding: 0 .5em;
+			white-space: nowrap;
+			overflow: hidden;
+			background: #ffffff;
+			height: 29px;
+			padding-top: 6px;
+		}
+
+		&.selectBox-hover a{
+			background-color: #EEE;
+		}
+
+		&.selectBox-disabled a{
+			color: #888;
+			background-color: transparent;
+		}
+	}
+
+	.selectBox-optgroup {
+		color: #666;
+		background: #EEE;
+		font-weight: bold;
+		line-height: 1.5;
+		padding: 0 .3em;
+		white-space: nowrap;
+	}
+}

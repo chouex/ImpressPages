@@ -1,0 +1,30 @@
+.leftmenu{
+	width: 100%; 
+	margin-bottom:20px;
+}
+
+.leftmenu ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+	
+.leftmenu li a{
+	display: block;
+  height: 28px; /*Set to height of bg image- padding within link (ie: 32px - 4px - 4px)*/
+	padding: 4px 0 4px 10px;
+	line-height: 28px; /*Set line-height of bg image- padding within link (ie: 32px - 4px - 4px)*/
+	text-decoration: none;
+	margin-top:7px;
+	background-color: #FFF;
+	background-image: url(images/light2.png);
+	border-bottom: 1px solid #dddbdb;
+	box-shadow: 0 1px 5px #999;	
+}	
+.leftmenu ul ul {margin-left:12px;}
+
+.leftmenu li a:hover, .leftmenu li.active a{ 
+color:#FFF;
+background-image: none;
+	box-shadow: 0 1px 5px #999;	
+}

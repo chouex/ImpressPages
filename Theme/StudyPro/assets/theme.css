@@ -1,0 +1,60 @@
+/* Edit theme.less, not this file. */
+body,
+.leftmenu li a:link,
+.leftmenu li a:visited,
+.bottom_block a,
+.bottom_block a:visited {
+  color: #454545;
+}
+a,
+a:visited,
+a:hover,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.carousel1 h3 a:hover {
+  color: #c80011;
+}
+.ipModuleForm .btn:hover,
+.prev,
+.next,
+.pagination li a,
+.leftmenu li a:hover,
+.leftmenu li.active a,
+.topmenu .level1 > li:hover > a,
+.topmenu .level1 > li > a:hover,
+.carousel1 li .more:hover,
+.topmenu .level1 > .active > a,
+.topmenu .level1 > .selected > a,
+.topmenu li:hover > ul {
+  background-color: #c80022;
+}
+body {
+  background-color: #32362e;
+}
+.ipModuleForm .btn,
+.prev:hover,
+.next:hover,
+.pagination li a:hover,
+header,
+.carousel1 li .more {
+  background-color: #1c5e7c;
+}
+.carousel1 h3 a,
+.content.page1 h2.wel {
+  color: #1c5e7c;
+}
+.leftmenu li a {
+  border-left: 3px solid #1c5e7c;
+}
+.leftmenu li a:hover,
+.leftmenu li.active a {
+  border-bottom: 1px solid #1c5e7c;
+  color: #FFF;
+}
+.main {
+  background-color: #f2f0f0;
+}

@@ -1,0 +1,129 @@
+{
+    "title": "Minimo",
+    "version": "2.03",
+    "doctype": "HTML5", /* HTML5, XHTML1_STRICT, XHTML1_TRANSITIONAL, XHTML1_FRAMESET, HTML4_STRICT, HTML4_TRANSITIONAL, HTML4_FRAMESET  */
+    "thumbnail": "thumbnail.jpg",
+    "author": "ImpressPagesTemplates",
+    "widget": {
+        /* Image cropping settings for widgets. Require theme reinstall to take affect. */
+        "image": {
+            "width": 540,
+            "height": 342,
+            "bigWidth": 800,
+            /* Lightbox */
+            "bigHeight": 600 /* Lightbox */
+        },
+        "gallery": {
+            "width": 245,
+            "height": 245,
+            "bigWidth": 800,
+            /* Lightbox */
+            "bigHeight": 600 /* Lightbox */
+        },
+        "textImage": {
+            "width": 600,
+            "height": 600,
+            "bigWidth": 800,
+            /* Lightbox */
+            "bigHeight": 600 /* Lightbox */
+        }
+    },
+    "options": [
+        {
+            "label": "Layout",
+            "type": "group",
+            "options": [
+                // {
+                //     "label": "Show search bar",
+                //     "name": "showSearch",
+                //     "type": "checkbox",
+                //     "default": true
+                // },
+                {
+                    "label": "Show footer widgets",
+                    "name": "showFooterWidgets",
+                    "type": "checkbox",
+                    "default": true
+                }
+            ]
+        },
+        {
+            "label": "Colors",
+            "type": "group",
+            "options": [
+                {
+                    "label": "Website color scheme",
+                    "name": "websiteColor",
+                    "type": "color",
+                    "default": "#ac3737"
+                }
+            ]
+        },
+        {
+            "label": "Social media",
+            "type": "group",
+            "options": [
+                {
+                    "label": "Show social icons",
+                    "name": "showSocialIcons",
+                    "type": "checkbox",
+                    "default": true
+                },
+                {
+                    "label": "Twitter link",
+                    "name": "linkTwitter",
+                    "type": "text",
+                    "default": "http://www.twitter.com/ip_templates"
+                },
+                {
+                    "label": "Facebook link",
+                    "name": "linkFacebook",
+                    "type": "text",
+                    "default": "https://www.facebook.com/pages/Impresspages-CMS-themes-and-plugins/256295047810570"
+                },
+                {
+                    "label": "Gplus link",
+                    "name": "linkGplus",
+                    "type": "text",
+                    "default": "https://plus.google.com/110097466171315236065"
+                },
+                {
+                    "label": "Linkedin link",
+                    "name": "linkLinkedin",
+                    "type": "text",
+                    "default": "http://www.linkedin.com/company/impresspagestemplates-com"
+                }
+            ]
+        },
+        {
+            "label": "Contact form",
+            "type": "group",
+            "options": [
+                {
+                    "label": "Display google maps on contacts page?",
+                    "name": "contactShowMap",
+                    "type": "checkbox",
+                    "default": true
+                },
+                {
+                    "label": "Google maps latitude",
+                    "name": "contactMapLat",
+                    "type": "text",
+                    "default": "54.686485"
+                },
+                {
+                    "label": "Google maps longitude",
+                    "name": "contactMapLong",
+                    "type": "text",
+                    "default": "25.286322"
+                },
+                {
+                    "label": "Google maps zoom level",
+                    "name": "contactMapZoomLevel",
+                    "type": "text",
+                    "default": "12"
+                }
+            ]
+        }
+    ]
+}
