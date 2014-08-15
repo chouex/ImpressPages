@@ -196,12 +196,16 @@
 	background: rgba(80, 80, 80, 0.75);
 }
 
-.bx-wrapper .bx-caption span {
-	color: #fff;
+.bx-wrapper .bx-caption span  {
+	color: #fff !important;
 	font-family: Arial;
 	display: block;
 	font-size: .85em;
 	padding: 10px;
+}
+
+.bx-wrapper .bx-caption h3  {
+	color: #fff !important;
 }
 
 .bx-wrapper img{

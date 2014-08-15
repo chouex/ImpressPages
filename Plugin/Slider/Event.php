@@ -16,14 +16,24 @@ class Event
 	//if($('.SliderGall').find( '.bx-wrapper').length>0)return;
    $('.SliderGall').css('display','block');
    
-   $('.bxslider-nc,.bxslider').each(function( index ) {
+   $('.bxslider').each(function( index ) {
     		if($(this).parent('.bx-viewport').length>0)return;
-    		//console.log($(this))
 $( this ).bxSlider({
    auto: true,
    mode: 'fade',
    speed: 800,
    captions: true,
+ 
+   });
+});
+    		
+   $('.bxslider-nc').each(function( index ) {
+    		if($(this).parent('.bx-viewport').length>0)return;
+$( this ).bxSlider({
+   auto: true,
+   mode: 'fade',
+   speed: 800,
+   captions: false,
  
    });
 });
