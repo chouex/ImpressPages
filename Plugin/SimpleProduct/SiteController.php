@@ -27,7 +27,7 @@ class SiteController
         $orderData['country'] = ipRequest()->getPost('country');
         
         $orderData['telephone'] = ipRequest()->getPost('night__phone_b');
-        $orderData['currency'] = ipRequest()->getPost('currency_code');
+        //$orderData['currency'] = ipRequest()->getPost('currency_code');
         for($i =1;ipRequest()->getPost("amount_$i");$i++){
             $orderData['items'][]=array(
                 'item_name'=>ipRequest()->getPost("item_name_$i"),

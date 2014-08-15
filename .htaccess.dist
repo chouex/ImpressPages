@@ -1,6 +1,7 @@
 <IfModule mod_rewrite.c>
     RewriteEngine on
-    #RewriteBase /~charles/sme-impresspages #example http://x.com/~charles/sme-impresspages/index.php
+    #example http://x.com/~charles/sme-impresspages/index.php
+    #RewriteBase /~charles/sme-impresspages
     
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
