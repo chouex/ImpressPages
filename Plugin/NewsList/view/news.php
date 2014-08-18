@@ -4,17 +4,18 @@ foreach ($items as $item){
     ?>
     <div class="_newsItem">
 
-        <?php
-
-        if (isset($item['imgUrl']) && $item['imgUrl']){
-            ?>
-            <img src="<?php echo $item['imgUrl']; ?>" alt="<?php echo escAttr($item['altText']); ?>"><?php
-        }
-
-        ?>
+        
         <div class="_newsText" style="margin-left: <?php echo $imgWidth + 10; ?>px">
 
             <a href="<?php echo $item['linkUrl'];?>">
+            <?php
+	
+	        if (isset($item['imgUrl']) && $item['imgUrl']){
+	            ?>
+	            <img src="<?php echo $item['imgUrl']; ?>" alt="<?php echo escAttr($item['altText']); ?>"><?php
+	        }
+	
+	        ?>
                 <h1><?php echo $item['heading']; ?></h1>
             </a>
             <div class="_date"><?php echo $item['createdAt']; ?></div>
