@@ -15,6 +15,7 @@ CREATE TABLE IF NOT EXISTS `ip_simple_product_order` (
   `name` varchar(255) DEFAULT NULL,
   `telephone` varchar(255) DEFAULT NULL,
   `email` varchar(255) DEFAULT NULL,
+  `remark` varchar(255) DEFAULT NULL,
   `address` text,
   `deliveryCost` int(11) NULL COMMENT 'in cents',
   `country` varchar(255) NOT NULL,

@@ -92,13 +92,9 @@ DC.cart.lang_en.addressform = [
         {'id':'lastname','type':'textinput','label':'Last Name','alt':'Please enter last name'},
     ],
     {'id':'line1','type':'textinput','label':'Address','alt':'Please enter address'},
-    {'id':'line2','type':'textinput','label':'e-mail','alt':'Please enter e-mail address'},
-    [
-        {'id':'city','type':'textinput','label':'City','alt':'Please enter city'},
-        {'id':'zip','type':'textinput','label':'Postcode/ZIP','alt':'Please enter Postcode/ZIP'},
-    ],
-    {'id':'country','type':'combobox','label':'Country','alt':'help here','data':DC.cart.lang_en.Country,'dataKey':'code'},
-    {'id':'phone','type':'textinput','label':'Contact No.','alt':'Please Contact No.'}
+    {'id':'line2','type':'textinput','label':'e-mail','alt':'Please enter e-mail address','validate':"email"},
+    {'id':'phone','type':'textinput','label':'Contact No.','alt':'Please enter Contact No.','validate':"numeric"},
+    {'id':'remark','type':'textarea','label':'Remark','validate':"optional"}
 ];
 
 // Japanese

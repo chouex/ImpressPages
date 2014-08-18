@@ -25,6 +25,7 @@ class SiteController
         $orderData['address'] = ipRequest()->getPost('address1');
         $orderData['email'] = ipRequest()->getPost('address2');
         $orderData['country'] = ipRequest()->getPost('country');
+        $orderData['remark'] = ipRequest()->getPost('remark');
         
         $orderData['telephone'] = ipRequest()->getPost('night__phone_b');
         //$orderData['currency'] = ipRequest()->getPost('currency_code');
