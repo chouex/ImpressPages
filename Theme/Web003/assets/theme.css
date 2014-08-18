@@ -923,7 +923,7 @@ fieldset[disabled] .ipModuleForm .checkbox-inline {
   }
 }
 .ipWidget-Divider.ipSkin-default {
-  border-bottom: 1px solid #747474;
+  border-bottom: 1px solid #e8e8e8;
   height: 0;
 }
 .ipWidget-Divider.ipSkin-space {

@@ -2,9 +2,7 @@
 <div id="container">
 		<div class="main col_12">
         <?php echo ipBlock('main')->exampleContent(' '); ?>
-        <?php echo ipSlot('text', array('id' => 'title', 'tag' => 'h4', 'default' => "News", 'class' => 'center')); ?>
-        <div class="gll"></div>
-       <?php echo ipBlock('main2')->exampleContent(' '); ?>
+
         <div class="col-md-9">
     
     <div class="row">
