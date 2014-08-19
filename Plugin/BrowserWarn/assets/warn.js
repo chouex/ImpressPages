@@ -66,7 +66,6 @@ var modal = (function(){
 
 			// Wait until the DOM has loaded before querying the document
 			$(document).ready(function(){
-				console.log(isIE ())
 				if(isIE ()!==false && isIE ()<9)
 					modal.open({content: "你的瀏覽器版本過舊,請更新<a href='//windows.microsoft.com/en-us/internet-explorer/download-ie'>最新的Internet Explorer</a>或者使用更好的<a href='//www.google.com/chrome/browser/'>Chrome瀏覽器</a>"});
 
