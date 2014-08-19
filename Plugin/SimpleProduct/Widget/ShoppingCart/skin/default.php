@@ -1,1 +1,0 @@
-<div id="cart" style="box-shadow:<?=ipGetOption("SimpleProduct.theme_color")?>">Cart</div>
