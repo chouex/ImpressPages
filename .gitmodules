@@ -1,0 +1,3 @@
+[submodule "Plugin/SimpleProduct"]
+	path = Plugin/SimpleProduct
+	url = ssh://charles@192.168.1.100/Groups/git/git_projects/sme/plugins/SimpleProduct.git
