@@ -88,7 +88,7 @@
     ResponsiveMenu();
     ResponsiveTables();
     
-    GalleryWidgetSetup();
+    //GalleryWidgetSetup();
 
     $().UItoTop({
       easing: 'swing',

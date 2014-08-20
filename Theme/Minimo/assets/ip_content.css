@@ -1380,7 +1380,6 @@ Move to separate stylesheet if invalid CSS is a problem.
   font-size: 20px;
   line-height: 24px;
   color: #868686;
-  margin-bottom: -20px;
 }
 .ipWidget p {
   color: #828282;
