@@ -1,0 +1,3069 @@
+/* Edit theme.less, not this file. */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden] {
+  display: none;
+}
+/* ==========================================================================
+   Base
+   ========================================================================== */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+/* ==========================================================================
+   Links
+   ========================================================================== */
+a:focus {
+  outline: thin dotted;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+h1 {
+  font-size: 2em;
+}
+h1,
+h2,
+h3 {
+  font-weight: normal;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+figure {
+  margin: 0;
+}
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  outline: none;
+}
+button,
+input {
+  line-height: normal;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+.clear {
+  /* http://sonspring.com/journal/clearing-floats */
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+}
+.clearfix,
+.ipModuleForm .form-horizontal .form-group,
+.ipModuleForm.form-horizontal .form-group {
+  /* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+  /*
+The following zoom:1 rule is specifically for IE6 + IE7.
+Move to separate stylesheet if invalid CSS is a problem.
+*/
+  zoom: 1;
+}
+.clearfix:before,
+.clearfix:after,
+.ipModuleForm .form-horizontal .form-group:before,
+.ipModuleForm .form-horizontal .form-group:after,
+.ipModuleForm.form-horizontal .form-group:before,
+.ipModuleForm.form-horizontal .form-group:after {
+  content: '.';
+  display: block;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+}
+.clearfix:after,
+.ipModuleForm .form-horizontal .form-group:after,
+.ipModuleForm.form-horizontal .form-group:after {
+  clear: both;
+}
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+html,
+body {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.quote {
+  color: #000000;
+  display: block;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: normal;
+  margin: 1em;
+  text-align: center;
+}
+.note {
+  background-color: transparent;
+  border-left-color: #747474;
+  border-left-style: solid;
+  border-left-width: 2px;
+  color: #000000;
+  display: block;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: normal;
+  margin-bottom: 1em;
+  padding-left: 1em;
+}
+.button {
+  background-color: #019bd4;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  padding: 0.5em 1em 0.5em 1em;
+  text-decoration: none;
+}
+.ipWidget {
+  /* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+  /*
+The following zoom:1 rule is specifically for IE6 + IE7.
+Move to separate stylesheet if invalid CSS is a problem.
+*/
+  zoom: 1;
+  *zoom: 1;
+  color: #000000;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.ipWidget:before,
+.ipWidget:after {
+  content: '.';
+  display: block;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+}
+.ipWidget:after {
+  clear: both;
+}
+.ipWidget:before,
+.ipWidget:after {
+  content: '.';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+  width: 0;
+  height: 0;
+}
+.ipWidget:after {
+  clear: both;
+}
+.ipWidget:before,
+.ipWidget:after {
+  content: " ";
+  display: table;
+}
+.ipWidget:after {
+  clear: both;
+}
+.ipWidget h1,
+.ipWidget h2,
+.ipWidget h3,
+.ipWidget h4,
+.ipWidget h5,
+.ipWidget h6,
+.ipWidget img,
+.ipWidget blockquote,
+.ipWidget p,
+.ipWidget ul,
+.ipWidget ol,
+.ipWidget li,
+.ipWidget dl,
+.ipWidget dd,
+.ipWidget dt,
+.ipWidget pre {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.ipWidget:last-child {
+  margin-bottom: 0;
+}
+.ipWidget .quote {
+  color: #000000;
+  display: block;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: normal;
+  margin: 1em;
+  text-align: center;
+}
+.ipWidget .note {
+  background-color: transparent;
+  border-left-color: #747474;
+  border-left-style: solid;
+  border-left-width: 2px;
+  color: #000000;
+  display: block;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: normal;
+  margin-bottom: 1em;
+  padding-left: 1em;
+}
+.ipWidget .button {
+  background-color: #019bd4;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  padding: 0.5em 1em 0.5em 1em;
+  text-decoration: none;
+}
+.ipWidget h1 {
+  color: #000000;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 36px;
+}
+.ipWidget h2 {
+  color: #000000;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
+}
+.ipWidget h3 {
+  color: #000000;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 24px;
+}
+.ipWidget ul {
+  list-style-position: inside;
+  list-style-type: square;
+  margin: 0 0 1em 1em;
+}
+.ipWidget ol {
+  list-style-position: inside;
+  margin: 0 0 1em 1em;
+}
+.ipWidget p {
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+.ipWidget ul ul,
+.ipWidget ol ol {
+  margin-bottom: 0;
+}
+.ipWidget li {
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+.ipWidget p + ul,
+.ipWidget p + ol {
+  margin-top: -0.5em;
+}
+.ipWidget a {
+  color: #019bd4;
+  text-decoration: none;
+}
+.ipWidget a:hover {
+  text-decoration: underline;
+}
+.ipWidget table {
+  border-collapse: collapse;
+  color: #000000;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;
+  margin-bottom: 1em;
+  width: 100%;
+}
+.ipWidget table p {
+  line-height: normal;
+  margin: 0;
+}
+.ipWidget td {
+  border-bottom: 1px solid #747474;
+  font-size: 14px;
+  padding: 9px;
+}
+.ipWidget th,
+.ipWidget thead td,
+.ipWidget tbody tr:first-child td {
+  font-size: 14px;
+  font-weight: bold;
+}
+.ipWidget thead + tbody tr:first-child td {
+  background-color: transparent;
+  border-bottom: 1px solid #8e8e8e;
+  color: inherit;
+  font-size: 14px;
+  font-weight: normal;
+}
+.ipWidget p:last-child,
+.ipWidget ul:last-child,
+.ipWidget ol:last-child {
+  margin-bottom: 0;
+}
+.ipModuleForm fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  min-width: 0;
+}
+.ipModuleForm legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 21px;
+  font-size: 21px;
+  line-height: inherit;
+  color: #000000;
+  border: 0;
+  border-bottom: 1px solid #747474;
+}
+.ipModuleForm label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.ipModuleForm input[type="search"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.ipModuleForm input[type="radio"],
+.ipModuleForm input[type="checkbox"] {
+  margin: 4px 0 0;
+  margin-top: 1px \9;
+  /* IE8-9 */
+  line-height: normal;
+}
+.ipModuleForm input[type="file"] {
+  display: block;
+}
+.ipModuleForm input[type="range"] {
+  display: block;
+  width: 100%;
+}
+.ipModuleForm select[multiple],
+.ipModuleForm select[size] {
+  height: auto;
+}
+.ipModuleForm input[type="file"]:focus,
+.ipModuleForm input[type="radio"]:focus,
+.ipModuleForm input[type="checkbox"]:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.ipModuleForm output {
+  display: block;
+  padding-top: 7px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #000000;
+}
+.ipModuleForm .form-control {
+  display: block;
+  width: 100%;
+  height: 35px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #000000;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #747474;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.ipModuleForm .form-control:focus {
+  border-color: #000000;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(0, 0, 0, 0.6);
+}
+.ipModuleForm .form-control::-moz-placeholder {
+  color: #777777;
+  opacity: 1;
+}
+.ipModuleForm .form-control:-ms-input-placeholder {
+  color: #777777;
+}
+.ipModuleForm .form-control::-webkit-input-placeholder {
+  color: #777777;
+}
+.ipModuleForm .form-control[disabled],
+.ipModuleForm .form-control[readonly],
+fieldset[disabled] .ipModuleForm .form-control {
+  cursor: not-allowed;
+  background-color: #eeeeee;
+  opacity: 1;
+}
+textarea.ipModuleForm .form-control {
+  height: auto;
+}
+.ipModuleForm input[type="search"] {
+  -webkit-appearance: none;
+}
+.ipModuleForm input[type="date"] {
+  line-height: 35px;
+}
+.ipModuleForm .form-group {
+  margin-bottom: 15px;
+}
+.ipModuleForm .radio,
+.ipModuleForm .checkbox {
+  display: block;
+  min-height: 21px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+.ipModuleForm .radio label,
+.ipModuleForm .checkbox label {
+  display: inline;
+  font-weight: normal;
+  cursor: pointer;
+}
+.ipModuleForm .radio input[type="radio"],
+.ipModuleForm .radio-inline input[type="radio"],
+.ipModuleForm .checkbox input[type="checkbox"],
+.ipModuleForm .checkbox-inline input[type="checkbox"] {
+  float: left;
+  margin-left: -20px;
+}
+.ipModuleForm .radio + .radio,
+.ipModuleForm .checkbox + .checkbox {
+  margin-top: -5px;
+}
+.ipModuleForm .radio-inline,
+.ipModuleForm .checkbox-inline {
+  display: inline-block;
+  padding-left: 20px;
+  margin-bottom: 0;
+  vertical-align: middle;
+  font-weight: normal;
+  cursor: pointer;
+}
+.ipModuleForm .radio-inline + .radio-inline,
+.ipModuleForm .checkbox-inline + .checkbox-inline {
+  margin-top: 0;
+  margin-left: 10px;
+}
+.ipModuleForm input[type="radio"][disabled],
+.ipModuleForm input[type="checkbox"][disabled],
+.ipModuleForm .radio[disabled],
+.ipModuleForm .radio-inline[disabled],
+.ipModuleForm .checkbox[disabled],
+.ipModuleForm .checkbox-inline[disabled],
+fieldset[disabled] .ipModuleForm input[type="radio"],
+fieldset[disabled] .ipModuleForm input[type="checkbox"],
+fieldset[disabled] .ipModuleForm .radio,
+fieldset[disabled] .ipModuleForm .radio-inline,
+fieldset[disabled] .ipModuleForm .checkbox,
+fieldset[disabled] .ipModuleForm .checkbox-inline {
+  cursor: not-allowed;
+}
+.ipModuleForm .has-feedback {
+  position: relative;
+}
+.ipModuleForm .has-feedback .form-control {
+  padding-right: 43.75px;
+}
+.ipModuleForm .has-feedback .form-control-feedback {
+  position: absolute;
+  top: 26px;
+  right: 0;
+  display: block;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+}
+.ipModuleForm .has-success .help-block,
+.ipModuleForm .has-success .control-label,
+.ipModuleForm .has-success .radio,
+.ipModuleForm .has-success .checkbox,
+.ipModuleForm .has-success .radio-inline,
+.ipModuleForm .has-success .checkbox-inline {
+  color: #3c763d;
+}
+.ipModuleForm .has-success .form-control {
+  border-color: #3c763d;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.ipModuleForm .has-success .form-control:focus {
+  border-color: #2b542c;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
+}
+.ipModuleForm .has-success .input-group-addon {
+  color: #3c763d;
+  border-color: #3c763d;
+  background-color: #dff0d8;
+}
+.ipModuleForm .has-success .form-control-feedback {
+  color: #3c763d;
+}
+.ipModuleForm .has-warning .help-block,
+.ipModuleForm .has-warning .control-label,
+.ipModuleForm .has-warning .radio,
+.ipModuleForm .has-warning .checkbox,
+.ipModuleForm .has-warning .radio-inline,
+.ipModuleForm .has-warning .checkbox-inline {
+  color: #8a6d3b;
+}
+.ipModuleForm .has-warning .form-control {
+  border-color: #8a6d3b;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.ipModuleForm .has-warning .form-control:focus {
+  border-color: #66512c;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
+}
+.ipModuleForm .has-warning .input-group-addon {
+  color: #8a6d3b;
+  border-color: #8a6d3b;
+  background-color: #fcf8e3;
+}
+.ipModuleForm .has-warning .form-control-feedback {
+  color: #8a6d3b;
+}
+.ipModuleForm .has-error .help-block,
+.ipModuleForm .has-error .control-label,
+.ipModuleForm .has-error .radio,
+.ipModuleForm .has-error .checkbox,
+.ipModuleForm .has-error .radio-inline,
+.ipModuleForm .has-error .checkbox-inline {
+  color: #b80000;
+}
+.ipModuleForm .has-error .form-control {
+  border-color: #b80000;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.ipModuleForm .has-error .form-control:focus {
+  border-color: #850000;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ff1f1f;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ff1f1f;
+}
+.ipModuleForm .has-error .input-group-addon {
+  color: #b80000;
+  border-color: #b80000;
+  background-color: #f2dede;
+}
+.ipModuleForm .has-error .form-control-feedback {
+  color: #b80000;
+}
+.ipModuleForm .form-control-static {
+  margin-bottom: 0;
+}
+.ipModuleForm .help-block {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #737373;
+}
+@media (min-width: 768px) {
+  .ipModuleForm .form-inline .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .ipModuleForm .form-inline .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+  }
+  .ipModuleForm .form-inline .input-group > .form-control {
+    width: 100%;
+  }
+  .ipModuleForm .form-inline .control-label {
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .ipModuleForm .form-inline .radio,
+  .ipModuleForm .form-inline .checkbox {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    vertical-align: middle;
+  }
+  .ipModuleForm .form-inline .radio input[type="radio"],
+  .ipModuleForm .form-inline .checkbox input[type="checkbox"] {
+    float: none;
+    margin-left: 0;
+  }
+  .ipModuleForm .form-inline .has-feedback .form-control-feedback {
+    top: 0;
+  }
+}
+.ipModuleForm .form-horizontal .control-label,
+.ipModuleForm .form-horizontal .radio,
+.ipModuleForm .form-horizontal .checkbox,
+.ipModuleForm .form-horizontal .radio-inline,
+.ipModuleForm .form-horizontal .checkbox-inline {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 7px;
+}
+.ipModuleForm .form-horizontal .radio,
+.ipModuleForm .form-horizontal .checkbox {
+  min-height: 28px;
+}
+.ipModuleForm .form-horizontal .form-group {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.ipModuleForm .form-horizontal .form-control-static {
+  padding-top: 7px;
+}
+@media (min-width: 768px) {
+  .ipModuleForm .form-horizontal .control-label {
+    text-align: right;
+  }
+}
+.ipModuleForm .form-horizontal .has-feedback .form-control-feedback {
+  top: 0;
+  right: 20px;
+}
+@-webkit-keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+.ipModuleForm .progress {
+  overflow: hidden;
+  height: 21px;
+  margin-bottom: 21px;
+  background-color: #f5f5f5;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.ipModuleForm .progress-bar {
+  float: left;
+  width: 0%;
+  height: 100%;
+  font-size: 12px;
+  line-height: 21px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #019bd4;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  -webkit-transition: width 0.6s ease;
+  transition: width 0.6s ease;
+}
+.ipModuleForm .progress-striped .progress-bar {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-size: 40px 40px;
+}
+.ipModuleForm .progress.active .progress-bar {
+  -webkit-animation: progress-bar-stripes 2s linear infinite;
+  animation: progress-bar-stripes 2s linear infinite;
+}
+.ipModuleForm * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.ipModuleForm .form-group {
+  margin-bottom: 20px;
+}
+.ipModuleForm .form-control {
+  max-width: 380px;
+}
+.ipModuleForm textarea.form-control {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  height: 10em;
+}
+.ipModuleForm .progress {
+  margin-bottom: 0;
+}
+.ipModuleForm .help-hint {
+  background-color: #747474;
+  color: #fff;
+  display: none;
+  font-size: 12px;
+  padding: 4px 10px 2px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  z-index: 1;
+}
+.ipModuleForm .help-error {
+  background-color: #b80000;
+  color: #fff;
+  display: none;
+  font-size: 12px;
+  max-width: 380px;
+  padding: 4px 10px 2px;
+  width: 100%;
+}
+.ipModuleForm .has-error .help-error {
+  display: block;
+}
+.ipModuleForm .form-group:hover .help-hint {
+  display: block;
+}
+.ipModuleForm .captcha img {
+  display: block;
+  max-width: 100%;
+}
+.ipModuleForm .form-group.type-blank {
+  margin-bottom: 0;
+}
+.ipModuleForm .form-group.type-blank label {
+  display: none;
+}
+.ipModuleForm .form-group.type-blank .help-error {
+  margin-bottom: 20px;
+}
+.ipModuleForm .form-group.type-submit label {
+  display: none;
+}
+.ipModuleForm ._file {
+  min-height: 20px;
+  padding: 0.5em;
+  margin-top: 5px;
+  background-color: #a7a7a7;
+  border: 1px solid #747474;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  max-width: 380px;
+  position: relative;
+}
+.ipModuleForm ._file .close {
+  float: right;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+.ipModuleForm ._file .close:hover,
+.ipModuleForm ._file .close:focus {
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.ipModuleForm ._file button.close {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+}
+.ipModuleForm ._file ._error {
+  color: #b80000;
+  font-size: 12px;
+}
+.ipModuleForm .btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.5;
+  border-radius: 3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.ipModuleForm .btn-default {
+  background: #019bd4;
+  border: none;
+  border-radius: 3px;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  margin: 0;
+  padding: 0.5em 1em;
+}
+.ipModuleForm .btn-default:hover {
+  box-shadow: 0 0 0 1px #019bd4 inset;
+  background: #01516e;
+}
+@media (min-width: 768px) {
+  .ipModuleForm.form-inline .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .ipModuleForm.form-inline .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+  }
+  .ipModuleForm.form-inline .input-group > .form-control {
+    width: 100%;
+  }
+  .ipModuleForm.form-inline .control-label {
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .ipModuleForm.form-inline .radio,
+  .ipModuleForm.form-inline .checkbox {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    vertical-align: middle;
+  }
+  .ipModuleForm.form-inline .radio input[type="radio"],
+  .ipModuleForm.form-inline .checkbox input[type="checkbox"] {
+    float: none;
+    margin-left: 0;
+  }
+  .ipModuleForm.form-inline .has-feedback .form-control-feedback {
+    top: 0;
+  }
+}
+.ipModuleForm.form-horizontal .control-label,
+.ipModuleForm.form-horizontal .radio,
+.ipModuleForm.form-horizontal .checkbox,
+.ipModuleForm.form-horizontal .radio-inline,
+.ipModuleForm.form-horizontal .checkbox-inline {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 7px;
+}
+.ipModuleForm.form-horizontal .radio,
+.ipModuleForm.form-horizontal .checkbox {
+  min-height: 28px;
+}
+.ipModuleForm.form-horizontal .form-group {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.ipModuleForm.form-horizontal .form-control-static {
+  padding-top: 7px;
+}
+@media (min-width: 768px) {
+  .ipModuleForm.form-horizontal .control-label {
+    text-align: right;
+  }
+}
+.ipModuleForm.form-horizontal .has-feedback .form-control-feedback {
+  top: 0;
+  right: 20px;
+}
+.ipBlock {
+  min-height: 10px;
+  /* to create minimum height when block is empty */
+}
+.ipBlock.ipbEmpty {
+  /* styles when block is empty */
+  min-height: 30px;
+  outline: #000 dashed 1px;
+}
+.ipBlock.ipbEmpty:hover {
+  /* styles when block is empty */
+  outline-color: #019bd4;
+}
+.ipBlock .ipbExampleContent {
+  position: relative;
+}
+.ipBlock .ipbExampleContent:after {
+  background-color: #e3e3e3;
+  content: ' ';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+  top: 0;
+  width: 100%;
+}
+.ipBlock .ipbExampleContent .ipWidget:hover {
+  outline: none;
+}
+.ipBlock .ipbExampleContent .ipbDefault {
+  color: #2f313f;
+  font-size: 24px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  height: 50px;
+  line-height: 50px;
+  visibility: hidden;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+.ipBlock .ipbExampleContent .ipbUser {
+  position: relative;
+  margin-top: -50px;
+  /* same height as .ipbDefault to show on top of it */
+  min-height: 50px;
+  /* same height as .ipbDefault to show on top of it */
+}
+.ipBlock .ipbExampleContent:hover .ipbDefault {
+  visibility: visible;
+}
+.ipBlock .ipbExampleContent:hover .ipbUser {
+  visibility: hidden;
+}
+.breadcrumb {
+  margin-bottom: 20px;
+  list-style: none;
+  padding: 0;
+}
+.breadcrumb > li {
+  display: inline-block;
+}
+.breadcrumb > li + li:before {
+  content: "/\00a0";
+  padding: 0 0.5em;
+  color: #000000;
+}
+.breadcrumb > .active {
+  color: #000000;
+}
+.ipWidget-Columns ._container {
+  margin: 0 -10px;
+}
+.ipWidget-Columns ._col {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  min-height: 1px;
+  padding: 0 10px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .ipWidget-Columns ._col {
+    float: none;
+    margin-bottom: 20px;
+    width: auto !important;
+  }
+  .ipWidget-Columns ._col:last-child {
+    margin-bottom: 0;
+  }
+}
+.ipWidget-Divider.ipSkin-default {
+  border-bottom: 1px solid #747474;
+  height: 0;
+}
+.ipWidget-Divider.ipSkin-space {
+  height: 25px;
+}
+.ipWidget-File ul {
+  list-style: none;
+  margin-left: 0;
+}
+.ipWidget-File a {
+  color: #019bd4;
+  font-weight: bold;
+}
+.ipWidget-File a:hover {
+  text-decoration: underline;
+}
+.ipWidget-Form .ipwSuccess {
+  /* mimicking the same styles as for form to keep message 'inside' the box */
+  border: 1px solid #888;
+  display: none;
+  padding: 20px 25px;
+}
+.ipWidget-Gallery {
+  margin-bottom: 0px;
+}
+.ipWidget-Gallery ._container {
+  list-style: none;
+  margin: 0 -10px;
+}
+.ipWidget-Gallery ._item {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  width: 24.99%;
+}
+.ipWidget-Gallery ._image {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+}
+@media screen and (max-width: 480px) {
+  .ipWidget-Gallery ._container {
+    margin: 0 -10px;
+  }
+  .ipWidget-Gallery ._item {
+    margin-bottom: 20px;
+    padding: 0 10px;
+    width: 50%;
+  }
+}
+.ipWidget-Html {
+  max-width: 100%;
+}
+.ipWidget-Image img {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  /* to remove 3px space below the image (default rendering behavior) */
+  max-width: 100%;
+}
+.ipWidget-Missing {
+  /* covered by default styles */
+}
+.ipWidget-Text table,
+.ipWidget-Text pre {
+  max-width: 100%;
+  overflow: auto;
+}
+.ipWidget-Heading {
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+.ipWidget-Heading:first-child {
+  margin-top: 0;
+}
+.ipWidget-Heading a {
+  color: #000000;
+  text-decoration: inherit;
+}
+.ipWidget-Heading a:hover {
+  text-decoration: underline;
+}
+/*
+=================================================
+                    Defaults
+=================================================
+*/
+.ipWidget:before,
+.ipModuleForm .ipmField:before,
+.clearfix:before,
+.ipWidget:after,
+.ipModuleForm .ipmField:after,
+.clearfix:after,
+.ipModuleForm .form-horizontal .form-group:before,
+.ipModuleForm .form-horizontal .form-group:after,
+.ipModuleForm.form-horizontal .form-group:before,
+.ipModuleForm.form-horizontal .form-group:after {
+  content: '.';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+  width: 0;
+  height: 0;
+}
+.ipWidget:after,
+.ipModuleForm .ipmField:after,
+.clearfix:after,
+.ipModuleForm .form-horizontal .form-group:after,
+.ipModuleForm.form-horizontal .form-group:after {
+  clear: both;
+}
+/*
+=================================================
+                   Search Module
+=================================================
+*/
+.ipModuleSearch {
+  margin-bottom: 15px;
+  /* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+  /*
+The following zoom:1 rule is specifically for IE6 + IE7.
+Move to separate stylesheet if invalid CSS is a problem.
+*/
+  zoom: 1;
+  *zoom: 1;
+}
+.ipModuleSearch:before,
+.ipModuleSearch:after {
+  content: '.';
+  display: block;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+}
+.ipModuleSearch:after {
+  clear: both;
+}
+.ipModuleSearch:before,
+.ipModuleSearch:after {
+  content: '.';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+  width: 0;
+  height: 0;
+}
+.ipModuleSearch:after {
+  clear: both;
+}
+.ipModuleSearch:before,
+.ipModuleSearch:after {
+  content: " ";
+  display: table;
+}
+.ipModuleSearch:after {
+  clear: both;
+}
+.ipModuleSearch .ipmFieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  float: left;
+  width: 100%;
+}
+.ipModuleSearch .ipmField {
+  float: left;
+  height: 40px;
+}
+.ipModuleSearch .ipmControlInput {
+  background: #f6f6f6;
+  border: 1px solid #e3e3e3;
+  padding: 12px 14% 12px 3%;
+  width: 82.5%;
+  font-size: 13px;
+  color: #828282;
+}
+.ipModuleSearch .ipmControlSubmit {
+  background: url(../img/sidebar_search_icon.png) no-repeat center center;
+  border: none;
+  text-indent: -99999px;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin: 1px 0 -1px 0;
+}
+.ipModuleSearch .ipmType-text {
+  float: left;
+  width: 100%;
+}
+.ipModuleSearch .ipmType-submit {
+  float: right;
+  width: 40px;
+  margin-left: -40px;
+}
+/*
+=================================================
+                  Form Module
+=================================================
+*/
+.buttonStyle {
+  background: none repeat scroll 0 0;
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 0 0 0;
+  padding: 10px 15px;
+  border: 0 none;
+  color: #FFFFFF;
+  font-family: Arial,sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 12px;
+  text-transform: none;
+  text-align: center;
+  color: white;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.buttonStyle:hover {
+  background: #8f8f8f;
+  color: white;
+}
+.buttonStyle:active {
+  position: relative;
+  top: 1px;
+}
+.ipModuleForm .form-group {
+  /* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+  /*
+The following zoom:1 rule is specifically for IE6 + IE7.
+Move to separate stylesheet if invalid CSS is a problem.
+*/
+  zoom: 1;
+  *zoom: 1;
+  margin-bottom: 25px;
+  position: relative;
+}
+.ipModuleForm .form-group:before,
+.ipModuleForm .form-group:after {
+  content: '.';
+  display: block;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+}
+.ipModuleForm .form-group:after {
+  clear: both;
+}
+.ipModuleForm .form-group:before,
+.ipModuleForm .form-group:after {
+  content: '.';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+  width: 0;
+  height: 0;
+}
+.ipModuleForm .form-group:after {
+  clear: both;
+}
+.ipModuleForm .form-group:before,
+.ipModuleForm .form-group:after {
+  content: " ";
+  display: table;
+}
+.ipModuleForm .form-group:after {
+  clear: both;
+}
+.ipModuleForm .ipmType-blank {
+  margin: -16px 0 0;
+  position: absolute;
+}
+.ipModuleForm .ipmField:last-child {
+  margin-bottom: 0;
+}
+.ipModuleForm .textableInputs {
+  background: #ffffff;
+  border: 1px solid #e3e3e3;
+  font-size: 15px;
+  color: #828282;
+  padding: 8px 13px 8px 8px;
+}
+.ipModuleForm .form-group label {
+  display: block;
+  float: left;
+  min-height: 1px;
+  width: 100%;
+  max-width: 150px;
+  padding-right: 30px;
+  margin-top: 3px;
+  font-weight: normal;
+  color: #828282;
+  font-size: 15px;
+  text-align: right;
+}
+.ipModuleForm .ipmMarker {
+  color: #b14343;
+}
+.ipModuleForm .ipmControl {
+  position: relative;
+  float: left;
+  width: 56%;
+}
+.ipModuleForm .ipmControlBlank {
+  height: 0;
+  margin: 0;
+  padding: 0;
+  visibility: hidden;
+  width: 0;
+}
+.ipModuleForm .form-control {
+  background: #ffffff;
+  border: 1px solid #e3e3e3;
+  font-size: 15px;
+  color: #828282;
+  padding: 8px 13px 8px 8px;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  max-width: 220px;
+  width: 100%;
+}
+.ipModuleForm .form-control:focus {
+  border: 1px solid #e3e3e3;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.ipModuleForm .type-textarea textarea {
+  background: #ffffff;
+  border: 1px solid #e3e3e3;
+  font-size: 15px;
+  color: #828282;
+  padding: 8px 13px 8px 8px;
+  min-height: 120px;
+  max-width: 420px;
+  width: 100%;
+  resize: vertical;
+}
+.ipModuleForm .type-submit label {
+  display: block !important;
+}
+.ipModuleForm .type-submit button {
+  background: none repeat scroll 0 0;
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 0 0 0;
+  padding: 10px 15px;
+  border: 0 none;
+  color: #FFFFFF;
+  font-family: Arial,sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 12px;
+  text-transform: none;
+  text-align: center;
+  color: white;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.ipModuleForm .type-submit button:hover {
+  background: #8f8f8f;
+  color: white;
+}
+.ipModuleForm .type-submit button:active {
+  position: relative;
+  top: 1px;
+}
+.ipModuleForm .ipmType-select {
+  margin-bottom: 31px;
+}
+.ipModuleForm .ipmControlConfirmOptions {
+  float: left;
+  margin-left: 10px;
+}
+.ipModuleForm .help-error {
+  max-width: 370px;
+}
+.ipModuleForm .captcha {
+  float: left;
+  margin-top: 5px;
+}
+.ipModuleForm .captcha img {
+  display: block;
+  max-width: 100%;
+}
+.ipModuleForm .ipmFileContainer .ipmHiddenInput {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+.ipModuleForm .ipmFileContainer .ipmHiddenInput input {
+  margin: 0;
+  padding: 0;
+}
+.ipModuleForm .ipmFileContainer .ipmFileProgress {
+  border: 1px solid #333;
+  height: 3px;
+}
+.ipModuleForm .ipmFileContainer .ipmFile {
+  margin-top: 5px;
+  background-color: #f2f2f2;
+  padding: 5px 10px;
+  color: #828282;
+}
+.ipModuleForm .ipmFileContainer .ipmFileProgressValue {
+  background-color: #ccc;
+  height: 3px;
+}
+.ipModuleForm .ipmFileContainer .ipmRemove {
+  width: 13px;
+  height: 13px;
+  background: url(../img/file_remove.png) no-repeat;
+  float: right;
+  cursor: pointer;
+  margin: 7px 0 0 0;
+}
+.ipModuleForm .ipmFileContainer .ipmUploadError {
+  color: #da0001;
+  font-size: 11px;
+}
+/*
+    Form: Error
+*/
+.ipModuleForm .ipmError .ipmLabel {
+  color: #b14343;
+}
+.ipModuleForm .ipmControlError {
+  border-color: #b14343;
+}
+.ipmErrorMessage {
+  color: #b14343;
+  font-size: 11px;
+  height: 11px;
+}
+/*
+    Form: Success  
+*/
+.ipWidget-Form .ipwSuccess {
+  display: none;
+  padding: 20px 25px;
+  font-size: 24px;
+}
+.ipWidget-Form .ipwSuccess p {
+  color: #3db079;
+}
+@media only screen and (max-width: 600px) {
+  .ipModuleForm .ipmLabel {
+    text-align: left;
+  }
+  .ipModuleForm .ipmControl {
+    width: 87.5%;
+  }
+  .ipModuleForm .ipmControlInput {
+    width: 100%;
+  }
+}
+/*
+=================================================
+                    Widgets
+=================================================
+*/
+.ipBlock.ipbEmpty {
+  min-height: 30px;
+  outline: #019bd4 dashed 1px;
+}
+.ipWidget {
+  margin-bottom: 25px;
+}
+.ipWidget:last-child {
+  margin-bottom: 0;
+}
+.sidebar .ipWidget:last-child {
+  margin-bottom: 25px;
+}
+.ipWidget p:last-child,
+.ipWidget ul:last-child,
+.ipWidget ol:last-child {
+  margin-bottom: 0;
+}
+.ipWidget h1,
+.ipWidget h2,
+.ipWidget h3,
+.ipWidget h1 a,
+.ipWidget h2 a,
+.ipWidget h3 a {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  margin: 5px 0 0 0;
+  text-decoration: none;
+}
+.ipWidget h1 {
+  font-size: 28px;
+}
+.ipWidget h2 {
+  margin-bottom: -15px;
+  font-size: 18px;
+}
+.ipWidget h3 {
+  font-size: 16px;
+  color: #868686;
+  margin-bottom: -20px;
+}
+.ipWidget p {
+  color: #828282;
+  line-height: 24px;
+  font-size: 13px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.ipWidget ul {
+  list-style-position: inside;
+  list-style-type: square;
+  margin: 0 0 20px -10px;
+}
+.ipWidget ol {
+  list-style-position: inside;
+  margin: 0 0 20px -10px;
+}
+.ipWidget li {
+  line-height: 24px;
+  margin-bottom: 4px;
+  color: #828282;
+}
+.ipWidget ul ul,
+.ipWidget ol ol,
+.ipWidget ul ol,
+.ipWidget ol ul {
+  margin-bottom: 0;
+}
+.ipWidget p + ul,
+.ipWidget p + ol {
+  margin-top: -20px;
+}
+.ipWidget a {
+  color: #a08ac4;
+  text-decoration: none;
+}
+.ipWidget a:hover {
+  text-decoration: underline;
+}
+.ipWidget .caption {
+  font-weight: bold;
+}
+.ipWidget .signature {
+  font-size: 16px;
+  font-style: italic;
+}
+.ipWidget .note {
+  color: #000;
+  display: block;
+  font-size: 16px;
+  font-style: italic;
+  margin: 0 30px 25px;
+}
+.ipWidget table {
+  border-collapse: collapse;
+  color: #828282;
+  font-size: 15px;
+  width: 100% !important;
+}
+.ipWidget table p {
+  line-height: auto;
+  margin: 0;
+}
+.ipWidget td {
+  font-size: 15px;
+  padding: 9px 17px;
+  text-align: center;
+}
+.ipWidget tr:nth-child(odd) {
+  background: #f6f6f6;
+}
+.ipWidget th,
+.ipWidget thead td,
+.ipWidget tbody tr:first-child td {
+  background: #adadad;
+  border: none;
+  font-size: 15px;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000000;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  filter: dropshadow(color=#000000, offx=1, offy=1);
+}
+.ipWidget thead + tbody tr:first-child td {
+  background-color: transparent;
+  border-bottom: 1px solid #b2b2b2;
+  color: inherit;
+  font-size: 12px;
+  font-weight: normal;
+}
+.footer-container .ipWidget p:last-child,
+.footer-container .ipWidget ul:last-child,
+.footer-container .ipWidget ol:last-child {
+  margin-bottom: 0px;
+}
+.footer-container .ipWidget h1,
+.footer-container .ipWidget h2,
+.footer-container .ipWidget h3,
+.footer-container .ipWidget h1 a,
+.footer-container .ipWidget h2 a,
+.footer-container .ipWidget h3 a {
+  font-weight: normal !important;
+  color: #ffffff;
+  margin-top: 0;
+}
+.footer-container .ipWidget h1 {
+  font-size: 18px;
+}
+.footer-container .ipWidget h2 {
+  font-size: 16px;
+}
+.footer-container .ipWidget h3 {
+  font-size: 14px;
+}
+.footer-container .ipWidget p {
+  font-size: 13px;
+  color: #ababab !important;
+}
+.footer-container .ipWidget a {
+  color: #bab7b7;
+  text-decoration: none;
+}
+.footer-container .ipWidget a:hover {
+  text-decoration: underline;
+}
+/*
+    Responsive tables
+*/
+table th {
+  font-weight: bold;
+}
+table td,
+table th {
+  padding: 9px 10px;
+  text-align: left;
+}
+/* Mobile */
+@media only screen and (max-width: 600px) {
+  table.responsive {
+    margin-bottom: 0;
+  }
+  .pinned {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #fff;
+    width: 35%;
+    overflow: hidden;
+    overflow-x: scroll;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+  }
+  .pinned table {
+    border-right: none;
+    border-left: none;
+    width: 100%;
+  }
+  .pinned table th,
+  .pinned table td {
+    white-space: nowrap;
+  }
+  .pinned td:last-child {
+    border-bottom: 0;
+  }
+  div.table-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-right: 1px solid #ccc;
+  }
+  div.table-wrapper div.scrollable table {
+    margin-left: 35%;
+  }
+  div.table-wrapper div.scrollable {
+    overflow: scroll;
+    overflow-y: hidden;
+  }
+  table.responsive td,
+  table.responsive th {
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  table.responsive th:first-child,
+  table.responsive td:first-child,
+  table.responsive td:first-child,
+  table.responsive.pinned td {
+    display: none;
+  }
+}
+/*
+    Images gallery
+*/
+.ipWidget-Gallery a {
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+.ipWidget-Gallery a .hover {
+  background: url(/Theme/Brightr/img/sidebar_search_icon.png) no-repeat center center;
+  position: absolute;
+  display: none;
+  z-index: 2;
+  right: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  text-align: left;
+}
+/*
+    Image widget
+*/
+.ipWidget-IpImage img {
+  display: block;
+}
+/*
+    Text + Image widget
+*/
+.ipWidget-IpTextImage .ipwImage {
+  float: left;
+  width: 48%;
+}
+.ipWidget-IpTextImage .ipwText {
+  float: right;
+  width: 48%;
+  max-width: 490px;
+}
+.ipWidget-IpTextImage.ipLayout-right .ipwImage {
+  float: right;
+}
+.ipWidget-IpTextImage.ipLayout-right .ipwText {
+  float: left;
+}
+@media only screen and (max-width: 768px) {
+  .ipWidget-IpTextImage .ipwImage {
+    float: left;
+    width: 100%;
+    max-width: 100%;
+  }
+  .ipWidget-IpTextImage .ipwText {
+    float: right;
+    width: 100%;
+  }
+  .ipWidget-IpTextImage.ipLayout-right .ipwImage {
+    float: right;
+  }
+  .ipWidget-IpTextImage.ipLayout-right .ipwText {
+    float: left;
+  }
+}
+/*
+    Files widget
+*/
+.ipWidget-IpFile ul {
+  list-style: none;
+  margin-left: 0;
+  margin: 0;
+  padding: 0;
+}
+.ipWidget-IpFile ul li {
+  margin-bottom: 4px;
+  margin: 0;
+  padding: 0;
+}
+.ipWidget-IpFile ul li a {
+  font-weight: bold;
+  font-size: 14px;
+  font-style: italic;
+  word-wrap: break-word;
+  text-decoration: none;
+}
+.ipWidget-IpFile ul li a:hover {
+  text-decoration: underline;
+}
+/*
+    Seperator widget
+*/
+.ipWidget-Divider {
+  width: 100%;
+}
+.ipWidget-Divider.ipSkin-default {
+  height: 0;
+  border-bottom: 1px dashed #bababa;
+}
+.ipWidget-Divider.ipSkin-space {
+  border-bottom: 1px dashed #bababa;
+  height: 45px;
+}
+/*
+    HTML code widget
+*/
+/* 
+    Inline Management 
+*/
+.ipModuleInlineManagement.ipmEmpty {
+  outline: #019bd4 dashed 1px;
+}
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+img {
+  vertical-align: middle;
+}
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+textarea {
+  resize: vertical;
+}
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+body {
+  font: 16px/26px Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background: #ffffff;
+  overflow-x: hidden;
+}
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.clearfix,
+.ipModuleForm .form-horizontal .form-group,
+.ipModuleForm.form-horizontal .form-group {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after,
+.ipModuleForm .form-horizontal .form-group:before,
+.ipModuleForm .form-horizontal .form-group:after,
+.ipModuleForm.form-horizontal .form-group:before,
+.ipModuleForm.form-horizontal .form-group:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after,
+.ipModuleForm .form-horizontal .form-group:after,
+.ipModuleForm.form-horizontal .form-group:after {
+  clear: both;
+}
+.clear {
+  clear: both;
+  height: 1px;
+  overflow: hidden;
+}
+/* ==========================================================================
+   Jquery plugins stylesheets
+   ========================================================================== */
+/*
+  Custom checkbox and radio inputs UI
+*/
+.prettycheckbox,
+.prettyradio {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+.prettycheckbox a,
+.prettyradio a {
+  background: url(../img/prettyCheckable-grey.png) top left no-repeat;
+  width: 27px;
+  height: 27px;
+  display: block;
+  float: left;
+  cursor: pointer;
+  margin: 0;
+  border: 0;
+}
+.prettycheckbox a:focus,
+.prettyradio a:focus {
+  outline: 0 none;
+}
+.prettycheckbox label,
+.prettyradio label {
+  display: block;
+  float: left;
+  margin: 1px 25px 1px 10px;
+  cursor: pointer;
+  font-size: 15px;
+  color: #828282;
+}
+.prettyradio a {
+  background-position: right top;
+}
+.prettyradio a.checked {
+  background-position: right -74px;
+}
+.prettycheckbox {
+  float: left;
+}
+.prettycheckbox a.checked {
+  background-position: left -75px;
+}
+.prettycheckbox label {
+  display: none;
+}
+/* Dropdown control */
+.selectBox {
+  display: block !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 150px;
+  height: 33px;
+  z-index: -1;
+  margin-bottom: 6px;
+}
+.selectBox-dropdown {
+  min-width: 150px;
+  border: solid 1px #BBB;
+  line-height: 1.5;
+  text-decoration: none;
+  text-align: left;
+  color: #000;
+  outline: none;
+  vertical-align: middle;
+  cursor: default;
+  z-index: 2 !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-bottom: 6px;
+  background: #f8f8f8;
+  border: 1px solid #e3e3e3;
+  font-size: 15px;
+  color: #828282;
+  padding: 0px 13px 0px 8px;
+}
+.selectBox-dropdown:focus,
+.selectBox-dropdown:focus .selectBox-arrow {
+  border-color: #bbaed0;
+  outline: none;
+}
+.selectBox-dropdown .selectBox-label {
+  padding: 3px 8px 2px 0px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 15px;
+  color: #828282;
+  margin-top: 3px;
+}
+.selectBox-dropdown .selectBox-arrow {
+  position: absolute;
+  top: 0;
+  right: 7px;
+  width: 23px;
+  height: 100%;
+  background: url(../img/selectbox_arrow.png) 50% center no-repeat;
+}
+.selectBox-dropdown-menu {
+  position: absolute;
+  z-index: 99999;
+  max-height: 200px;
+  min-height: 1em;
+  margin-top: -1px;
+  border-left: 1px solid #e3e3e3;
+  border-right: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+}
+.selectBox-inline {
+  min-width: 150px;
+  outline: none;
+  border: solid 1px #BBB;
+  background: #FFF;
+  display: inline-block;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  overflow: auto;
+}
+.selectBox-inline:focus {
+  border-color: #666;
+}
+/* Options */
+.selectBox-options,
+.selectBox-options li,
+.selectBox-options li a {
+  list-style: none;
+  display: block;
+  cursor: default;
+  padding: 0;
+  margin: 0;
+}
+.selectBox-options li a {
+  font-size: 15px;
+  color: #828282;
+  line-height: 1.5;
+  padding: 0 .5em;
+  white-space: nowrap;
+  overflow: hidden;
+  background: #ffffff;
+  height: 29px;
+  padding-top: 6px;
+}
+.selectBox-options li.selectBox-hover a {
+  background-color: #EEE;
+}
+.selectBox-options li.selectBox-disabled a {
+  color: #888;
+  background-color: transparent;
+}
+.selectBox-options .selectBox-optgroup {
+  color: #666;
+  background: #EEE;
+  font-weight: bold;
+  line-height: 1.5;
+  padding: 0 .3em;
+  white-space: nowrap;
+}
+/*
+    ColorBox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox,
+#cboxOverlay,
+#cboxWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  overflow: hidden;
+}
+#cboxOverlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+#cboxMiddleLeft,
+#cboxBottomLeft {
+  clear: left;
+}
+#cboxContent {
+  position: relative;
+}
+#cboxLoadedContent {
+  overflow: auto;
+}
+#cboxTitle {
+  margin: 0;
+}
+#cboxLoadingOverlay,
+#cboxLoadingGraphic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#cboxPrevious,
+#cboxNext,
+#cboxClose,
+#cboxSlideshow {
+  cursor: pointer;
+}
+.cboxPhoto {
+  float: left;
+  margin: auto;
+  border: 0;
+  display: block;
+  max-width: none;
+}
+.cboxIframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
+}
+#colorbox,
+#cboxContent,
+#cboxLoadedContent {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+/* 
+    User Style:
+    Change the following styles to modify the appearance of ColorBox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay {
+  background: #fff;
+}
+#cboxContent {
+  margin-top: 32px;
+  overflow: visible;
+}
+.cboxIframe {
+  background: #fff;
+}
+#cboxError {
+  padding: 50px;
+  border: 1px solid #ccc;
+}
+#cboxLoadingGraphic {
+  background: url(../img/loading.gif) no-repeat center center;
+}
+#cboxLoadingOverlay {
+  background: #000;
+}
+#cboxTitle {
+  position: absolute;
+  top: -25px;
+  left: 0;
+  color: #828282;
+}
+#cboxCurrent {
+  position: absolute;
+  top: -22px;
+  right: 205px;
+  text-indent: -9999px;
+}
+#cboxSlideshow,
+#cboxPrevious,
+#cboxNext,
+#cboxClose {
+  text-indent: -9999px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -20px;
+  background: url(../img/controls.png) no-repeat 0 0;
+}
+#cboxPrevious {
+  background-position: 0px 0px;
+  right: 44px;
+}
+#cboxPrevious:hover {
+  background-position: 0px -25px;
+}
+#cboxNext {
+  background-position: -25px 0px;
+  right: 22px;
+}
+#cboxNext:hover {
+  background-position: -25px -25px;
+}
+#cboxClose {
+  background-position: -50px 0px;
+  right: 0;
+}
+#cboxClose:hover {
+  background-position: -50px -25px;
+}
+.cboxSlideshow_on #cboxPrevious,
+.cboxSlideshow_off #cboxPrevious {
+  right: 66px;
+}
+.cboxSlideshow_on #cboxSlideshow {
+  background-position: -75px -25px;
+  right: 44px;
+}
+.cboxSlideshow_on #cboxSlideshow:hover {
+  background-position: -100px -25px;
+}
+.cboxSlideshow_off #cboxSlideshow {
+  background-position: -100px 0px;
+  right: 44px;
+}
+.cboxSlideshow_off #cboxSlideshow:hover {
+  background-position: -75px -25px;
+}
+/* ==========================================================================
+   Theme styles
+   ========================================================================== */
+header.main {
+  /*background: #ffffff url(/Theme/Brightr/img/header_background.png) no-repeat left top;*/
+  min-height: 64px;
+  position: relative;
+}
+header.main .logo {
+  min-height: 47px;
+}
+header.main .logo,
+header.main .logo a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 28px;
+  margin: 29px 0 0 0;
+}
+header.main .logo img,
+header.main .logo a img {
+  margin-top: -4px;
+}
+header.main nav {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  margin: 0;
+}
+header.main nav ul {
+  padding: 0 0 0 20px;
+}
+header.main nav ul.level1 {
+  margin-bottom: 0;
+}
+header.main nav ul.level1 li {
+  padding-bottom: 16px;
+}
+header.main nav ul li {
+  display: inline-block;
+  position: relative;
+}
+header.main nav ul li a {
+  font-size: 13px;
+  font-weight: bold;
+  color: #a4a4a4;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+header.main nav ul li:hover .level2 {
+  display: block;
+}
+header.main nav ul .level2 {
+  background: #f7f7f7;
+  -webkit-box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.14);
+  box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.14);
+  position: absolute;
+  display: none;
+  z-index: 15;
+  top: 43px;
+  left: -67px;
+  padding: 17px 19px 0 19px;
+  text-align: left;
+  width: auto;
+  min-width: 150px;
+}
+header.main nav ul .level2 a {
+  font-size: 15px;
+  font-weight: normal;
+  color: #535353;
+  margin-bottom: 12px;
+  display: block;
+}
+header.main nav ul .level2 li {
+  display: block;
+  margin-left: 0;
+  padding-bottom: 0;
+}
+header.main nav .langs {
+  padding: 0;
+  background: #ffffff;
+}
+header.main nav .langs li {
+  display: inline-block;
+  margin: 0 4px;
+}
+header.main nav .langs li a {
+  color: #828282;
+}
+/*
+    Features in homepage
+*/
+.features-container {
+  position: relative;
+  width: 100%;
+}
+.features-container .feature {
+  background: #f2f2f2;
+  text-align: center;
+  width: 100%;
+}
+.features-container .feature h2 {
+  font-size: 18px;
+  color: #666666 !important;
+  margin: 15px 0 7px 0;
+}
+.features-container .feature .txt {
+  color: #a7a7a7;
+  font-size: 15px;
+}
+.homepage.main-container .main .site-content {
+  margin: 50px 0 50px 0;
+}
+.single-page-header {
+  background: #f8f8f8;
+  border-bottom: 1px solid #f2f2f2;
+  position: relative;
+  min-height: 80px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+.single-page-header h1 {
+  font-size: 20px;
+  position: relative;
+  z-index: 1;
+  color: #666666;
+}
+.single-page-header .breadcrumbs {
+  position: relative;
+  z-index: 1;
+  font-size: 13px;
+  color: #bdbdbd !important;
+  line-height: 13px;
+}
+.single-page-header .breadcrumbs .breadcrumb {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.single-page-header .breadcrumbs .breadcrumb > li + li:before,
+.single-page-header .breadcrumbs li {
+  color: #bdbdbd !important;
+}
+.single-page-header .breadcrumbs a {
+  font-size: 13px;
+  color: #bdbdbd !important;
+  text-decoration: none;
+}
+.social-icons-wrapper .social-icon {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  text-indent: -9999px;
+  margin: 0 3px 0 4px;
+}
+.social-icons-wrapper .social-icon.twitter {
+  background: url(/Theme/Brightr/img/social/twitter.png) no-repeat left top;
+}
+.social-icons-wrapper .social-icon.twitter:hover {
+  background-position: left bottom;
+}
+.social-icons-wrapper .social-icon.facebook {
+  background: url(/Theme/Brightr/img/social/facebook.png) no-repeat left top;
+}
+.social-icons-wrapper .social-icon.facebook:hover {
+  background-position: left bottom;
+}
+.social-icons-wrapper .social-icon.linkedin {
+  background: url(/Theme/Brightr/img/social/linkedin.png) no-repeat left top;
+}
+.social-icons-wrapper .social-icon.linkedin:hover {
+  background-position: left bottom;
+}
+.social-icons-wrapper .social-icon.gplus {
+  background: url(/Theme/Brightr/img/social/gplus.png) no-repeat left top;
+}
+.social-icons-wrapper .social-icon.gplus:hover {
+  background-position: left bottom;
+}
+.main-container {
+  background: #ffffff;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.31);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.31);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.31);
+  max-width: 1140px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main-container .main .site-content {
+  margin: 0 0 40px 0;
+}
+.main-container .main .site-content-home {
+  margin: 20px 0 40px 0;
+}
+.site-content-wrapper {
+  padding: 0 20px;
+}
+/*
+    Blog layout page
+*/
+.main .site-content.with-sidebar {
+  float: left;
+  width: 65.1754%;
+  margin-right: 3.5087%;
+}
+.main .sidebar {
+  float: left;
+  width: 31.3159%;
+  padding-bottom: 40px;
+}
+.sidebar #side-menu {
+  margin-top: 20px;
+  margin-bottom: 25px;
+  border-top: 1px solid #e8e8e8;
+  border-left: 1px solid #e8e8e8;
+  border-right: 1px solid #e8e8e8;
+}
+.sidebar #side-menu ul.level1,
+.sidebar #side-menu ul.level2,
+.sidebar #side-menu ul.level3 {
+  margin: 0;
+  padding: 0;
+}
+.sidebar #side-menu ul.level1 > li,
+.sidebar #side-menu ul.level2 > li,
+.sidebar #side-menu ul.level3 > li {
+  list-style-type: none;
+  padding: 5px 0 5px 0;
+  margin: 0 0 0 0;
+}
+.sidebar #side-menu ul.level1 > li.subnodes,
+.sidebar #side-menu ul.level2 > li.subnodes,
+.sidebar #side-menu ul.level3 > li.subnodes {
+  padding-bottom: 0;
+}
+.sidebar #side-menu ul.level1 > li a,
+.sidebar #side-menu ul.level2 > li a,
+.sidebar #side-menu ul.level3 > li a {
+  text-decoration: none;
+}
+.sidebar #side-menu ul.level1 > li {
+  padding-left: 20px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.sidebar #side-menu ul.level1 > li a {
+  font-size: 13px;
+  color: #828282;
+}
+.sidebar #side-menu ul.level2,
+.sidebar #side-menu ul.level3 {
+  margin-left: 20px;
+}
+.sidebar #side-menu ul.level2:last-child,
+.sidebar #side-menu ul.level3:last-child {
+  margin-bottom: 5px;
+}
+.sidebar #side-menu ul.level2 > li {
+  padding: 0 0 0 0;
+}
+.sidebar #side-menu ul.level2 > li a {
+  font-size: 12px;
+  color: #a8a7a7;
+}
+.sidebar #side-menu ul.level3 > li {
+  padding: 0 0 0 0;
+}
+.sidebar #side-menu ul.level3 > li a {
+  font-size: 11px;
+  color: #a8a7a7;
+}
+.footer-container {
+  background: #5f5f5f;
+  border-top: 6px solid #4c4c4c;
+  position: relative;
+  color: #a4a4a4;
+  width: 100%;
+}
+.footer-container.no-widgets-area {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+.footer-container .copyright-container {
+  display: block;
+  background: #4c4c4c;
+  left: 0;
+  bottom: 0;
+  color: #858585;
+  width: 100%;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.32);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.32);
+}
+.footer-container .copyright-container p {
+  color: #ababab;
+  font-size: 13px;
+}
+.footer-container .copyright-container p.left {
+  float: left;
+}
+.footer-container .copyright-container p.right {
+  float: right;
+}
+/*
+    Contacts page
+*/
+#the-map {
+  display: block;
+  height: 530px;
+  width: 100%;
+}
+#the-map img {
+  max-width: none;
+}
+.contact-page {
+  padding: 33px 0 0 0 !important;
+}
+.contact-page .site-content-wrapper .site-content {
+  margin-bottom: 0;
+}
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@media only screen and (min-width: 1px) {
+  #dummy-before-content {
+    display: none;
+  }
+  header.main .logo a {
+    margin-left: 0;
+  }
+  header.main nav {
+    position: relative;
+  }
+  header.main nav.with-langs {
+    padding-right: 0;
+  }
+  header.main nav select {
+    display: none;
+    width: 80%;
+    padding: 5px;
+    margin: 10px auto 3px auto;
+  }
+  header.main nav .langs {
+    margin: 0 0 10px 0;
+  }
+  header.main nav .langs li {
+    display: inline-block;
+  }
+  .features-container {
+    padding: 20px 0 0 0;
+    width: 100%;
+  }
+  .features-container .feature {
+    display: block;
+    width: 90%;
+    padding: 33px 0;
+    margin: 0 auto;
+  }
+  .features-container .feature.in-the-middle {
+    margin: 20px auto;
+  }
+  .features-container .feature h2 {
+    padding: 0 10%;
+  }
+  .features-container .feature .txt {
+    padding: 0 10%;
+  }
+  .footer-container {
+    position: relative;
+    padding: 40px 0 0 0;
+    width: 100%;
+  }
+  .footer-container .copyright-container {
+    display: block;
+    margin-top: 60px;
+    width: 100%;
+  }
+  .footer-container .copyright-container p {
+    font-size: 13px;
+  }
+  .footer-container .column {
+    position: relative;
+    float: none;
+    margin: 0 auto 10px auto;
+  }
+  .footer-container .wrapper {
+    padding: 0 3%;
+    width: 94%;
+  }
+  .single-page-header h1 {
+    width: 100%;
+    display: block;
+    float: left;
+    text-align: center;
+    margin: 20px 0 0 0;
+  }
+  .single-page-header h1.without-breadcrumbs {
+    margin-top: 30px;
+  }
+  .single-page-header .breadcrumbs {
+    width: 100%;
+    float: right;
+    text-align: center;
+    margin: 10px 0 0 0;
+  }
+  .single-page-header .social-icons-wrapper {
+    text-align: center;
+    margin: 16px 0 24px 0;
+  }
+  /*
+        Blog layout page
+    */
+  .main .site-content.with-sidebar {
+    float: left;
+    margin-right: 0;
+    padding-bottom: 40px;
+    width: 100%;
+  }
+  .main .sidebar {
+    float: left;
+    padding-bottom: 40px;
+    width: 100%;
+  }
+  .main-container {
+    width: 90%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .main-container {
+    width: 95%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+  }
+  .single-page-header .left-side {
+    float: left;
+    max-width: 400px;
+  }
+  .single-page-header h1 {
+    text-align: left;
+    width: auto;
+    float: left;
+    margin: 17px 0 0 20px;
+  }
+  .single-page-header .breadcrumbs {
+    text-align: right;
+    width: auto;
+    float: left;
+    margin: 3px 20px 0 21px;
+  }
+  .single-page-header .social-icons-wrapper {
+    float: right;
+    max-width: 186px;
+    margin: 24px 17px 0 0;
+  }
+  .footer-container .copyright-container {
+    width: 100%;
+    height: 40px;
+  }
+  .footer-container .copyright-container p {
+    font-size: 13px;
+    margin: 7px 0 0 0;
+  }
+  .footer-container .copyright-container p.left {
+    float: left;
+  }
+  .footer-container .copyright-container p.right {
+    float: right;
+  }
+  .footer-container .column {
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 769px) {
+  #dummy-before-content {
+    display: block;
+  }
+  .main-container {
+    margin: 30px auto 30px auto;
+  }
+  header.main {
+    min-height: 80px;
+  }
+  header.main .logo {
+    float: left;
+    text-align: left;
+    margin-left: 29px;
+  }
+  header.main nav {
+    position: absolute;
+    float: right;
+    margin-right: 20px;
+    margin-left: -34px;
+    margin-bottom: 10px;
+  }
+  header.main nav ul {
+    width: auto;
+  }
+  header.main nav ul li {
+    display: inline-block;
+    margin-left: 33px;
+  }
+  header.main nav.with-langs {
+    padding-right: 76px;
+  }
+  header.main nav .langs {
+    background: #ffffff;
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    height: 35px;
+    top: 9px;
+    right: -10px;
+    padding: 0 9px;
+    margin: 0;
+  }
+  header.main nav .langs:hover {
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.31);
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.31);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.31);
+    height: auto;
+    overflow: visible;
+    z-index: 10;
+  }
+  header.main nav .langs li {
+    margin: 0;
+    display: block;
+    padding: 7px 0;
+  }
+  header.main nav .langs li a {
+    margin-right: 14px;
+  }
+  header.main nav .langs li span {
+    background: url(/Theme/Brightr/img/langs_triangle.png) no-repeat center center;
+    display: inline-block;
+    width: 10px;
+    height: 9px;
+    margin: 0 0 0 1px;
+  }
+  /*
+        Features in homepage
+    */
+  .features-container {
+    padding: 20px 0 0 0;
+  }
+  .features-container .feature {
+    display: block;
+    width: 30%;
+    float: left;
+    padding: 0;
+    margin: 0 2.5% 0 2.5%;
+  }
+  .features-container .feature.in-the-middle {
+    margin: 0;
+  }
+  /*
+        Blog layout page
+    */
+  .main .site-content.with-sidebar {
+    float: left;
+    width: 65.1754%;
+    margin-right: 3.5087%;
+  }
+  .main .sidebar {
+    float: left;
+    width: 31.3159%;
+    padding-bottom: 40px;
+  }
+  /*
+        Footer
+    */
+  .footer-container .wrapper {
+    width: 93.2%;
+    padding: 0 3.4%;
+  }
+  .footer-container .group-one,
+  .footer-container .group-two {
+    display: block;
+    float: left;
+    height: auto;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+  .footer-container .column {
+    width: 42%;
+    margin: 0 9% 0 2%;
+    float: left;
+  }
+  .footer-container .column.secound {
+    clear: right;
+  }
+  .footer-container .column.last {
+    margin-right: 0;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .features-container {
+    padding: 20px 20px 0 20px;
+  }
+  .features-container.wrapper {
+    max-width: 1100px;
+  }
+  .features-container .feature {
+    display: block;
+    width: 30.5%;
+    float: left;
+    padding: 0 0 33px 0;
+    margin: 0;
+  }
+  .features-container .feature.in-the-middle {
+    margin: 0 2%;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  .wrapper {
+    max-width: 1140px;
+  }
+  .main-container {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  header.main nav {
+    margin-right: 29px;
+  }
+  header.main nav.with-langs {
+    margin-right: 0;
+    padding-right: 96px;
+  }
+  header.main nav .langs {
+    right: 20px;
+  }
+  .features-container .feature {
+    width: 32%;
+  }
+  .footer-container .group-one,
+  .footer-container .group-two {
+    display: inline-block;
+    float: left;
+    width: 50%;
+    height: auto;
+  }
+  .footer-container .column {
+    width: 42%;
+    float: left;
+    margin-left: 0;
+    margin-right: 8%;
+  }
+  .footer-container .column.secound {
+    margin-left: 3%;
+  }
+  .footer-container .column.third {
+    margin-left: 5.5%;
+    margin-right: 10.5%;
+  }
+  .footer-container .column.last {
+    margin-right: 0;
+  }
+}
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+     * Don't show links for images, or javascript/internal links
+     */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  @page {
+    margin: 0.5cm;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}

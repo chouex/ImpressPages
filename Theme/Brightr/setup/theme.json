@@ -1,0 +1,168 @@
+{
+    "title": "Brightr",
+    "version": "2.10",
+    "doctype": "HTML5",
+    "thumbnail": "thumbnail.jpg",
+    "author": "ImpressPagesTemplates",
+    "widget": {
+        "image": {
+            "width": 540,
+            "height": 342,
+            "bigWidth": 800,
+            "bigHeight": 600
+        },
+        "gallery": {
+            "width": 245,
+            "height": 245,
+            "bigWidth": 800,
+            "bigHeight": 600
+        },
+        "textImage": {
+            "width": 600,
+            "height": 600,
+            "bigWidth": 800,
+            "bigHeight": 600
+        }
+    },
+    "options": [
+        {
+            "label": "Layout & design",
+            "type": "group",
+            "options": [
+                {
+                    "label": "Main color",
+                    "name": "mainColor",
+                    "type": "color",
+                    "default": "#4aa7ef"
+                },
+                {
+                    "label": "Secondary color",
+                    "name": "secondaryColor",
+                    "type": "color",
+                    "default": "#4EBFD8"
+                },
+                {
+                    "label": "Site background",
+                    "name": "siteBackground",
+                    "type": "select",
+                    "default": "default",
+                    "values": ["default", "cubes", "fabric", "fancy", "freckles", "knitting", "navy", "rice", "texture"]
+                },
+                {
+                    "label": "Custom background image (provide full path, for example http://example.com/img.jpg;  if defined, background patterns will be ignored)",
+                    "name": "customBackgroundImage",
+                    "type": "text",
+                    "default": ""
+                },
+                {
+                    "label": "Display breadcrumbs ",
+                    "name": "showBreadcrumbs",
+                    "type": "checkbox",
+                    "default": true
+                },
+                {
+                    "label": "Display footer widgets",
+                    "name": "showFooterWidgets",
+                    "type": "checkbox",
+                    "default": true
+                },
+                {
+                    "label": "Show menu in sidebar",
+                    "name": "showMenuInSidebar",
+                    "type": "checkbox",
+                    "default": true
+                }
+            ]
+        },
+        {
+            "label": "Homepage",
+            "type": "group",
+            "options": [
+                {
+                    "label": "Display slideshow",
+                    "name": "slideshowOnHomepage",
+                    "type": "checkbox",
+                    "default": true
+                },
+                {
+                    "label": "Slideshow autoslide delay (in milliseconds)",
+                    "name": "slideShowLoopTime",
+                    "type": "text",
+                    "default": "4000"
+                },
+                {
+                    "label": "Display features",
+                    "name": "displayFeatures",
+                    "type": "checkbox",
+                    "default": true
+                }
+            ]
+        },
+        {
+            "label": "Social media",
+            "type": "group",
+            "options": [
+                {
+                    "label": "Show social icons",
+                    "name": "showSocialIcons",
+                    "type": "checkbox",
+                    "default": true
+                },
+                {
+                    "label": "Twitter link",
+                    "name": "linkTwitter",
+                    "type": "text",
+                    "default": "http://www.twitter.com/ip_templates"
+                },
+                {
+                    "label": "Facebook link",
+                    "name": "linkFacebook",
+                    "type": "text",
+                    "default": "https://www.facebook.com/pages/Impresspages-CMS-themes-and-plugins/256295047810570"
+                },
+                {
+                    "label": "Gplus link",
+                    "name": "linkGplus",
+                    "type": "text",
+                    "default": "https://plus.google.com/110097466171315236065"
+                },
+                {
+                    "label": "Linkedin link",
+                    "name": "linkLinkedin",
+                    "type": "text",
+                    "default": "http://www.linkedin.com/company/impresspagestemplates-com"
+                }
+            ]
+        },
+        {
+            "label": "Contact form",
+            "type": "group",
+            "options": [
+                {
+                    "label": "Display google maps on contacts page?",
+                    "name": "contactShowMap",
+                    "type": "checkbox",
+                    "default": true
+                },
+                {
+                    "label": "Google maps latitude",
+                    "name": "contactMapLat",
+                    "type": "text",
+                    "default": "54.686485"
+                },
+                {
+                    "label": "Google maps longitude",
+                    "name": "contactMapLong",
+                    "type": "text",
+                    "default": "25.286322"
+                },
+                {
+                    "label": "Google maps zoom level",
+                    "name": "contactMapZoomLevel",
+                    "type": "text",
+                    "default": "12"
+                }
+            ]
+        }
+    ]
+}

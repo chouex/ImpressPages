@@ -1,0 +1,267 @@
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+body {
+    background: #ffffff;
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrapper {
+    max-width: 1199px;
+    margin: 0 auto;
+    min-width: 320px;
+    width: 75%;
+}
+
+header.scrollingTheme {
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+body.ipHasAdminNavbar header.scrollingTheme {
+  top: 40px;
+}
+
+body.ipHasAdminPanel header.scrollingTheme {
+    top: 148px;
+}
+
+header .wrapper {
+    background-color: #1d2d48;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+header {
+    border-bottom: 1px solid white;
+}
+
+footer {
+    background-color: #1d2d48;
+    color: #ffffff;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 25px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 10px;
+}
+
+.homepage {
+    background-image: url('images/flamingos.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    font-family: 'Open Sans', sans-serif;
+    margin: 8px 0px 0px 0px;
+    min-height: 473px;
+    padding-top: 45px;
+    text-align: center;
+    width: 100%;
+}
+
+.copyright {
+    clear: both;
+    font-family: Georgia, serif;
+    font-size: 14px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.spacer {
+    height: 100px;
+    margin: 0;
+}
+
+.navContainer {
+    padding-left: 20px;
+    padding-top: 7px;
+}
+
+.navIcons {
+    float: right;
+    margin: 0px 0px 0px 0px;
+    padding-top: 2px;
+    padding-right: 20px;
+    text-align: right;
+}
+
+.navIcons p {
+    line-height: 100%;
+    margin-top: 0px;
+    font-size: 17px;
+    font-family: Georgia, serif;
+    padding: 0px;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.navIcons a {
+    padding: 0px 6px;
+}
+
+nav ul {
+    float: left;
+    margin: 0 auto;
+    padding-left: 0px;
+    padding-right: 15px;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 14px;
+    padding-left: 0px;
+    padding-right: 30px;
+    text-align: center;
+}
+
+nav ul li a, nav ul li a:link, nav ul li a:visited {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav ul li {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+nav ul li a:hover {
+    font-weight: 800;
+}
+
+.homepage h1, .homepage h2 {
+    text-shadow: 1px 1px black, 1px 1px black;
+}
+
+.homepage h2 {
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.homepage h1 {
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 57px;
+    margin-top: 17px;
+    text-transform: uppercase;
+}
+
+.startButton {
+    bottom: 10px;
+    padding-top: 200px;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.startButton a {
+    background-color: #ffffff;
+    border: 1px solid #29426c;
+    border-radius: 10px;
+    color: #1d2d48;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    padding: 7px 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.signupButton a {
+    background-color: #ffffff;
+    border: 1px solid #29426c;
+    border-radius: 5px;
+    color: #1d2d48;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 800;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    text-indent: 0;
+    text-transform: uppercase;
+}
+
+.signupButton {
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    text-decoration: none;
+}
+
+.signup {
+    float: left;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.signup p {
+    line-height: 100%;
+    margin: 0px;
+    padding-bottom: 10px;
+}
+
+.signup input {
+    border: none;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-weight: 600;
+    height: 30px;
+    margin-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 225px;
+}
+
+#cboxTitle {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-style: normal;;
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: inherit;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .wrapper, .wrapper ul {
+        width: 100%;
+    }
+
+    .navIcons {
+        float: none;
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    .navIcons img {
+        padding: 10px 0 0 0;
+    }
+
+    .spacer {
+        height: 76px;
+    }
+}
+
+

@@ -1,0 +1,55 @@
+/*
+  Custom checkbox and radio inputs UI
+*/
+
+.prettycheckbox, .prettyradio {
+  display: inline-block;
+  padding:0;
+  margin:0;
+
+  a{
+    background: url(../img/prettyCheckable-grey.png) top left no-repeat;
+    width: 27px;
+    height: 27px;
+    display: block;
+    float: left;
+    cursor: pointer;
+    margin: 0;
+    border: 0;
+
+    &:focus{
+      outline: 0 none;
+    }
+  }
+
+  label{
+    display: block;
+    float: left;
+    margin: 1px 25px 1px 10px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #828282; 
+  }
+}
+
+.prettyradio a{
+  background-position: right top;
+
+  &.checked{
+    background-position: right -74px;
+  }
+}
+
+.prettycheckbox {
+  float: left;
+
+  a{
+    &.checked{
+      background-position: left -75px;
+    }
+  }
+
+  label{
+    display: none;
+  }
+}
